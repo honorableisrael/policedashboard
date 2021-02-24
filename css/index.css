@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "Gotham-Bold";
+    src: local("Gotham-Bold"),
+        url("../css/Gotham-Font/Gotham-Font/GothamBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "GothamBook";
+    src: local("GothamBook"),
+        url("../css/Gotham-Font/Gotham-Font/GothamBook.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Gotham-Medium";
+    src: local("Gotham-Medium"),
+        url("../css/Gotham-Font/Gotham-Font/GothamMedium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Gotham-Thin";
+    src: local("Gotham-Thin"),
+        url("../css/Gotham-Font/Gotham-Font/Gotham-Thin.otf") format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "GothamBook";
+}
+.sidenav{
+    background-color: #f0f5ff;
+}
+.sdnpddeddv{
+    padding: 17px 17px;
+}
+.logo-section{
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-evenly;
+    padding: 11px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 8px rgba(3, 50, 154, 0.1);
+}
+.cmpnynmedv{
+    display: flex;
+    align-items: baseline;
+}
+.cmpnynmedv>h1{
+    width: 89%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    color: #333333;
+}
+.cmpnynmedv>img{
+    width: 11%;
+}
+.logosctncontent>p{
+    color: #666666;
+    font-size: 14px;
+    line-height: 16px;
+}
+.logosectionimg{
+    padding-top: 10px;
+}
+.sidenavlinkscontainer{
+    margin-top: 46px;
+}
+.sidenavlinks{
+    padding-left: 37px;
+    font-size: 14px;
+    color: #666666;
+}
+.dashbord{
+    margin-bottom: 31px;
+}
+.managesaleslist{
+    margin-bottom: 15px;
+}
+.sidenavlinks>img{
+    margin-right: 15px;
+}
+.userslogo{
+    margin-right: 11px !important;
+}
+.sidenav-titiles{
+    padding-left: 37px;
+    font-size: 12px;
+    color: #999999;
+    margin-bottom: 11px;
+}
+.sidnavborderline{
+    border: 0.5px solid #BBBBBB;
+}
+.sidnnavrow{
+    margin-bottom: 23px;
+}
+.sdncopyr{
+    color: #999999;
+    font-size: 10px;
+    padding-bottom: 133px;
+    line-height: 12px;
+    text-align: center;
+}
