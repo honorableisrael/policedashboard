@@ -118,6 +118,7 @@ body {
 }
 .remt1 {
   width: 80%;
+  object-fit: cover;
 }
 .signup1 {
   font-size: 38px;
@@ -126,6 +127,14 @@ body {
   color: #333333;
   font-weight: 900;
   text-align: center;
+}
+.fortg{
+    padding-top: 5rem;
+}
+.rmee{
+    position: relative;
+    bottom: 4.5rem;
+    left: 3.7rem;
 }
 
 .social1 {
@@ -195,7 +204,6 @@ button:focus {
   width: 20px;
   margin-right: 1rem;
   max-height: 17px;
-
 }
 .sugngnu {
   font-size: 14px;
@@ -205,25 +213,32 @@ button:focus {
   padding-top: 1.2rem;
 }
 
-.showwa{
-    text-align: right;
+.showwa {
+  text-align: right;
 }
-.show1{
-    position: relative;
-    bottom: 2.5rem;
-    right: 1rem;
-    cursor: pointer;
+.show1 {
+  position: relative;
+  bottom: 2.5rem;
+  right: 1rem;
+  cursor: pointer;
 }
 
-@media(max-width:764px){
-    .leftsidewrapp{
-        display: none;
-    }
-    .rightsidewrapp{
-        padding-left: 1rem;
+@media (max-width: 764px) {
+  .leftsidewrapp {
+    display: none;
+  }
+  .rightsidewrapp {
+    padding-left: 1rem;
     padding-right: 1rem;
-    }
+  }
 }
-.rmem2{
-    padding-left: 5rem;
+.rmem2 {
+  padding-left: 5rem;
+}
+.forgopassw {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #999999;
+  padding-top: 2rem;
 }
