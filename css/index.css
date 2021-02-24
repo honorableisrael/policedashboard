@@ -1,105 +1,229 @@
 @font-face {
-    font-family: "Gotham-Bold";
-    src: local("Gotham-Bold"),
-        url("../css/Gotham-Font/Gotham-Font/GothamBold.ttf") format("truetype");
+  font-family: "Gotham-Bold";
+  src: local("Gotham-Bold"),
+    url("../css/Gotham-Font/Gotham-Font/GothamBold.ttf") format("truetype");
 }
 @font-face {
-    font-family: "GothamBook";
-    src: local("GothamBook"),
-        url("../css/Gotham-Font/Gotham-Font/GothamBook.ttf") format("truetype");
+  font-family: "GothamBook";
+  src: local("GothamBook"),
+    url("../css/Gotham-Font/Gotham-Font/GothamBook.ttf") format("truetype");
 }
 @font-face {
-    font-family: "Gotham-Medium";
-    src: local("Gotham-Medium"),
-        url("../css/Gotham-Font/Gotham-Font/GothamMedium.ttf") format("truetype");
+  font-family: "Gotham-Medium";
+  src: local("Gotham-Medium"),
+    url("../css/Gotham-Font/Gotham-Font/GothamMedium.ttf") format("truetype");
 }
 @font-face {
-    font-family: "Gotham-Thin";
-    src: local("Gotham-Thin"),
-        url("../css/Gotham-Font/Gotham-Font/Gotham-Thin.otf") format("truetype");
+  font-family: "Gotham-Thin";
+  src: local("Gotham-Thin"),
+    url("../css/Gotham-Font/Gotham-Font/Gotham-Thin.otf") format("truetype");
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: "GothamBook";
+body {
+  font-family: "GothamBook";
 }
-.sidenav{
-    background-color: #f0f5ff;
+.sidenav {
+  background-color: #f0f5ff;
 }
-.sdnpddeddv{
-    padding: 17px 17px;
+.sdnpddeddv {
+  padding: 17px 17px;
 }
-.logo-section{
-    display: flex;
-    background-color: #ffffff;
-    justify-content: space-evenly;
-    padding: 11px;
-    border-radius: 4px;
-    box-shadow: 0px 2px 8px rgba(3, 50, 154, 0.1);
+.logo-section {
+  display: flex;
+  background-color: #ffffff;
+  justify-content: space-evenly;
+  padding: 11px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 8px rgba(3, 50, 154, 0.1);
 }
-.cmpnynmedv{
-    display: flex;
-    align-items: baseline;
+.cmpnynmedv {
+  display: flex;
+  align-items: baseline;
 }
-.cmpnynmedv>h1{
-    width: 89%;
-    margin-bottom: 10px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 19px;
-    color: #333333;
+.cmpnynmedv > h1 {
+  width: 89%;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #333333;
 }
-.cmpnynmedv>img{
-    width: 11%;
+.cmpnynmedv > img {
+  width: 11%;
 }
-.logosctncontent>p{
-    color: #666666;
-    font-size: 14px;
-    line-height: 16px;
+.logosctncontent > p {
+  color: #666666;
+  font-size: 14px;
+  line-height: 16px;
 }
-.logosectionimg{
-    padding-top: 10px;
+.logosectionimg {
+  padding-top: 10px;
 }
-.sidenavlinkscontainer{
-    margin-top: 46px;
+.sidenavlinkscontainer {
+  margin-top: 46px;
 }
-.sidenavlinks{
-    padding-left: 37px;
-    font-size: 14px;
-    color: #666666;
+.sidenavlinks {
+  padding-left: 37px;
+  font-size: 14px;
+  color: #666666;
 }
-.dashbord{
-    margin-bottom: 31px;
+.dashbord {
+  margin-bottom: 31px;
 }
-.managesaleslist{
-    margin-bottom: 15px;
+.managesaleslist {
+  margin-bottom: 15px;
 }
-.sidenavlinks>img{
-    margin-right: 15px;
+.sidenavlinks > img {
+  margin-right: 15px;
 }
-.userslogo{
-    margin-right: 11px !important;
+.userslogo {
+  margin-right: 11px !important;
 }
-.sidenav-titiles{
-    padding-left: 37px;
-    font-size: 12px;
-    color: #999999;
-    margin-bottom: 11px;
+.sidenav-titiles {
+  padding-left: 37px;
+  font-size: 12px;
+  color: #999999;
+  margin-bottom: 11px;
 }
-.sidnavborderline{
-    border: 0.5px solid #BBBBBB;
+.sidnavborderline {
+  border: 0.5px solid #bbbbbb;
 }
-.sidnnavrow{
-    margin-bottom: 23px;
+.sidnnavrow {
+  margin-bottom: 23px;
 }
-.sdncopyr{
-    color: #999999;
-    font-size: 10px;
-    padding-bottom: 133px;
-    line-height: 12px;
-    text-align: center;
+.sdncopyr {
+  color: #999999;
+  font-size: 10px;
+  padding-bottom: 133px;
+  line-height: 12px;
+  text-align: center;
+}
+.rightsidewrapp {
+  background: #f9f9f9;
+  padding-top: 4rem;
+  text-align: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  min-height: 100vh;
+}
+.leftsidewrapp {
+  background: #f0f5ff;
+  min-height: 100vh;
+  padding-top: 8rem;
+}
+.remt1 {
+  width: 80%;
+}
+.signup1 {
+  font-size: 38px;
+  line-height: 46px;
+  letter-spacing: 0.03em;
+  color: #333333;
+  font-weight: 900;
+  text-align: center;
+}
+
+.social1 {
+  background: #e9eeff;
+  border: none;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  color: #666666;
+  padding: 1rem;
+  margin-top: 3rem;
+  width: 100%;
+  margin-bottom: 0.1rem;
+  border-radius: 12px;
+}
+button:focus {
+  outline: none;
+}
+.google1 {
+  width: 25px;
+  margin-right: 0.6rem;
+}
+.sign23 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 13px;
+  letter-spacing: 0.01em;
+  color: #666666;
+  background: inherit;
+  display: inline-block;
+  padding: 1rem;
+  position: relative;
+  top: 1.4rem;
+}
+.sign21 {
+  width: 100%;
+  background: #bbbbbb;
+  height: 1px;
+}
+.emails2 {
+  padding-top: 2rem;
+}
+.username1 {
+  background: #f2f2f2;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+  padding: 1.7rem 1rem;
+}
+.submitt1 {
+  color: #fff;
+  border: none;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  background: #2e6af0;
+  padding: 1rem;
+  width: 100%;
+  font-weight: 500;
+  margin-bottom: 0.1rem;
+  border-radius: 12px;
+}
+.adduser {
+  width: 20px;
+  margin-right: 1rem;
+  max-height: 17px;
+
+}
+.sugngnu {
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #666666;
+  padding-top: 1.2rem;
+}
+
+.showwa{
+    text-align: right;
+}
+.show1{
+    position: relative;
+    bottom: 2.5rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+@media(max-width:764px){
+    .leftsidewrapp{
+        display: none;
+    }
+    .rightsidewrapp{
+        padding-left: 1rem;
+    padding-right: 1rem;
+    }
+}
+.rmem2{
+    padding-left: 5rem;
 }
