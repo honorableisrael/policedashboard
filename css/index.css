@@ -19,6 +19,11 @@
     url("../css/Gotham-Font/Gotham-Font/Gotham-Thin.otf") format("truetype");
 }
 
+:root {
+  --customblue: #2e6af0;
+  --textcolor: #666666;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -128,13 +133,13 @@ body {
   font-weight: 900;
   text-align: center;
 }
-.fortg{
-    padding-top: 5rem;
+.fortg {
+  padding-top: 5rem;
 }
-.rmee{
-    position: relative;
-    bottom: 4.5rem;
-    left: 3.7rem;
+.rmee {
+  position: relative;
+  bottom: 4.5rem;
+  left: 3.7rem;
 }
 
 .social1 {
@@ -193,12 +198,13 @@ button:focus {
   font-size: 15px;
   line-height: 17px;
   letter-spacing: 0.01em;
-  background: #2e6af0;
+  background: var(--customblue);
   padding: 1rem;
   width: 100%;
   font-weight: 500;
   margin-bottom: 0.1rem;
   border-radius: 12px;
+  transition: 1s ease-in-out;
 }
 .adduser {
   width: 20px;
@@ -242,4 +248,37 @@ button:focus {
   text-align: center;
   color: #999999;
   padding-top: 2rem;
+}
+
+.logi {
+  font-size: 15px;
+  text-align: right;
+  padding-bottom: 0.7rem;
+  position: relative;
+  bottom: 0.3rem;
+}
+.submitt1:hover {
+  transition: 1s ease-in-out;
+  color: white;
+  background: #9eb6eb;
+}
+.copprt {
+  font-size: 12px;
+  line-height: 12px;
+  color: #999999;
+  padding-top: 5rem;
+}
+
+.losttet {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #333333;
+  text-align: center;
+  margin-top: 2rem;
+}
+.lostbtn{
+    max-width: 200px;
+    margin-top: 2rem;
 }
