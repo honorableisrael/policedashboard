@@ -19,6 +19,265 @@
     url("../css/Gotham-Font/Gotham-Font/Gotham-Thin.otf") format("truetype");
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "GothamBook";
+}
+.sidenav{
+    background-color: #f0f5ff;
+}
+.sdnpddeddv{
+    padding: 17px 17px;
+}
+.logo-section{
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-evenly;
+    padding: 11px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 8px rgba(3, 50, 154, 0.1);
+}
+.cmpnynmedv{
+    display: flex;
+    align-items: baseline;
+}
+.cmpnynmedv>h1{
+    width: 89%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    color: #333333;
+}
+.cmpnynmedv>img{
+    width: 11%;
+}
+.logosctncontent>p{
+    color: #666666;
+    font-size: 14px;
+    line-height: 16px;
+}
+.logosectionimg{
+    padding-top: 10px;
+}
+.sidenavlinkscontainer{
+    margin-top: 46px;
+}
+.sidenavlinks{
+    padding-left: 37px;
+    font-size: 14px;
+    color: #666666;
+}
+.dashbord{
+    margin-bottom: 31px;
+}
+.managesaleslist{
+    margin-bottom: 15px;
+}
+.sidenavlinks>img{
+    margin-right: 15px;
+}
+.userslogo{
+    margin-right: 11px !important;
+}
+.sidenav-titiles{
+    padding-left: 37px;
+    font-size: 12px;
+    color: #999999;
+    margin-bottom: 11px;
+}
+.sidnavborderline{
+    border: 0.5px solid #BBBBBB;
+}
+.sidnnavrow{
+    margin-bottom: 23px;
+}
+.sdncopyr{
+    color: #999999;
+    font-size: 10px;
+    padding-bottom: 133px;
+    line-height: 12px;
+    text-align: center;
+}
+.dashbord-main{
+    background-color: #f9f9f9;
+}
+.dshboadsearchbar{
+    border: none;
+    padding: 2px 30px; 
+    background-color: #f9f9f9;
+}
+.dshboadsearchbar:focus{
+    outline: none !important;
+    background-color: #f9f9f9;
+}
+.srchcntainer{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 17px;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.dshboadsearchbar::placeholder{
+    font-size: 14px;
+    letter-spacing: 1%;
+}
+.addpropbtn{
+   width: 17%;
+   text-align: center;
+   background-color: #2e6af0;
+   color: #ffffff;
+   font-size: 14px;
+   border-radius: 5px;
+   margin-right: 16px;
+   cursor: pointer;
+   padding: 7px 0px;
+}
+.serchimg{
+    position: relative;
+    top: -29px;
+    left: -1px;
+}
+.srchline{
+    border: 0.5px solid #bbbbbb8e;
+    width: 61%;
+    margin-top: -17px;
+    margin-bottom: 46px
+}
+.officerstatuscntner{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    margin-bottom: 58px;
+}
+.cards{
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 11px 12px;
+}
+.card-green{
+    border: 1px solid #0fbc49;
+}
+.card-red{
+  border:1px solid #ff523d;
+  width: 21%;
+}
+.card-purple{
+  border:1px solid #aa3dff;
+  width: 21%;
+}
+.card-blue{
+   border:1px solid #2e6af0;
+   width: 21%;
+}
+.number-green{
+    color: #0fbc49;
+}
+.number-red{
+    color: #ff523d;
+}
+.number-purple{
+    color: #aa3dff;
+}
+.number-blue{
+    color: #2e6af0;
+}
+.numbofofficers{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.regstdoffcers{
+    font-size: 14px;
+    color: #666666;
+}
+.officerstatuslogo{
+    margin-right: 5px;
+}
+.graphdv{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 9px;
+}
+.propsstatsprimmheading{
+    color: #2e6af0;
+    font-size: 16px;
+    font-weight: 700;
+}
+.reqlocsectn{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 45px;
+}
+.piechartdv{    
+    padding: 9px 31px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.chartwrapper{
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    align-items: flex-end;
+    border-bottom: 1px solid #bbbbbb8e;
+}
+.bordernone{
+    border-bottom: none !important;
+}
+.bluepiechart{
+    margin-right: 12px;
+}
+.propstatusdiv{
+    width: 33%;
+}
+.propsstatsubheading{
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 9px;
+    line-height: 19px;
+}
+.propsstatstotal{
+    color: #7c828d;
+    font-size: 14px;
+}
+.budgetrnge-section{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 45px;
+}
+.budgetrngwrapper{
+    width: 33%;
+}
+.budgetrngcontent{
+    background-color: #fff;
+    padding: 18px 29px 25px 28px;
+    text-align: center;
+    border-radius: 10px;
+}
+.budgetrngcontentdiv{
+    border-bottom:   1px solid #bbbbbb8e; 
+    padding-top: 49px;
+}
+.budgetrngcontentdiv>h1{
+    font-size: 14px;
+    font-weight: 700;
+    color: #666666;
+    margin-bottom: 13px;
+}
+.budgetrngcontentdiv>p{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 41px;
+    color: #2e6af0;
+}
+
+
 :root {
   --customblue: #2e6af0;
   --textcolor: #666666;
