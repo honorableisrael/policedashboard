@@ -506,8 +506,16 @@ button:focus {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  .mobilesidenav{
+  .mobihide {
+    display: none;
+  }
+  .mobilesidenav {
     display: block !important;
+  }
+}
+@media (min-width: 764px) {
+  .sidebar {
+    display: none !important;
   }
 }
 .rmem2 {
@@ -705,6 +713,9 @@ button:focus {
   .srchcntainer {
     padding-left: 0px;
   }
+  .firstshow {
+    display: block !important;
+  }
 }
 @media (max-width: 1024px) {
   .mobchrtwrapper {
@@ -729,17 +740,35 @@ button:focus {
     padding-left: 5px;
   }
 }
+
 .sidebar {
   margin: 0;
-    padding: 0;
-    width: 248px;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    z-index: 20;
-    overflow: auto;
-    transition: 1s ease-in-out;
+  padding: 0;
+  width: 248px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  z-index: 20;
+  overflow: auto;
+  transition: 0.1s ease-in-out;
 }
-.hidesidebar{
+.hidesidebar {
   width: 0px;
+}
+.firstshow {
+  display: block !important;
+}
+.secondhide {
+  display: none;
+  width: 0px;
+}
+.toggleleft {
+  text-align: right;
+  width: 222px;
+}
+.tomes {
+  color: black;
+  font-size: 2p;
+  font-size: 2em;
+  z-index: 222;
 }

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
     <title>Dashboard_police</title>
     <link rel="stylesheet" href="../css/index.css" />
+    <script src="../js/index.js"></script>
   </head>
   <body>
     <div>
@@ -104,8 +105,11 @@
           </div>
           <!-- sidebar -->
           <div class="">
-            <div class="sidebar">
+            <div class="sidebar mobihide animated fadeInLeft" id="mobilesideclass">
               <div class="sidenav mobilesidenav">
+                <div class="toggleleft">
+                    <span onclick="showhide()" class="tomes">&times;</span>
+                  </div>
                 <div class="sdnpddeddv">
                   <div class="logo-section">
                     <div class="logosectionimg">
@@ -122,7 +126,7 @@
                     </div>
                   </div>
                   <div class="sidenavlinkscontainer">
-                    <div class="sidenavlinks dashbord">
+                    <div class="sidenavlinks dashbord animated fadeInLeft">
                       <img src="../images/Home.png" alt="logo" />
                       Dashboard
                     </div>
@@ -235,11 +239,12 @@
                   />
                 </div>
               </form>
-              <div id="hamburger">
+              <div id="hamburger" onclick="showhide()">
                 <img src="../images/burger-img.png" />
               </div>
             </div>
-            <div class="officerstatuscntner">
+            <div class="officerstatuscntner" onclick="hidesidenav()">
+              
               <div class="cards card-green">
                 <div class="officerstatuslogo">
                   <img src="../images/green-avatar.png" alt="pic" />
@@ -316,7 +321,7 @@
               </div>
             </div>
             <div class="reqlocsectn">
-              <div class="mobchrtwrapper">
+              <div class="mobchrtwrapper" onclick="hidesidenav()">
                 <p class="propsstatsprimmheading">Requests by Hot Locations</p>
                 <img
                   src="../images/graph.png"
