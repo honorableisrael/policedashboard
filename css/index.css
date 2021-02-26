@@ -166,118 +166,116 @@ body{
 }
 .card-red{
   border:1px solid #ff523d;
+}
+.card-purple {
+  border: 1px solid #aa3dff;
   width: 21%;
 }
-.card-purple{
-  border:1px solid #aa3dff;
+.card-blue {
+  border: 1px solid #2e6af0;
   width: 21%;
 }
-.card-blue{
-   border:1px solid #2e6af0;
-   width: 21%;
+.number-green {
+  color: #0fbc49;
 }
-.number-green{
-    color: #0fbc49;
+.number-red {
+  color: #ff523d;
 }
-.number-red{
-    color: #ff523d;
+.number-purple {
+  color: #aa3dff;
 }
-.number-purple{
-    color: #aa3dff;
+.number-blue {
+  color: #2e6af0;
 }
-.number-blue{
-    color: #2e6af0;
+.numbofofficers {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0;
 }
-.numbofofficers{
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 0;
+.regstdoffcers {
+  font-size: 14px;
+  color: #666666;
 }
-.regstdoffcers{
-    font-size: 14px;
-    color: #666666;
+.officerstatuslogo {
+  margin-right: 5px;
 }
-.officerstatuslogo{
-    margin-right: 5px;
+.graphdv {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 9px;
 }
-.graphdv{
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 9px;
+.propsstatsprimmheading {
+  color: #2e6af0;
+  font-size: 16px;
+  font-weight: 700;
 }
-.propsstatsprimmheading{
-    color: #2e6af0;
-    font-size: 16px;
-    font-weight: 700;
+.reqlocsectn {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 45px;
 }
-.reqlocsectn{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 45px;
+.piechartdv {
+  padding: 9px 31px;
+  background-color: #fff;
+  border-radius: 10px;
 }
-.piechartdv{    
-    padding: 18px 31px;
-    background-color: #fff;
-    border-radius: 10px;
+.chartwrapper {
+  display: flex;
+  padding-bottom: 10px;
+  padding-top: 15px;
+  align-items: flex-end;
+  border-bottom: 1px solid #bbbbbb8e;
 }
-.chartwrapper{
-    display: flex;
-    padding-bottom: 10px;
-    padding-top: 15px;
-    align-items: flex-end;
-    border-bottom: 1px solid #bbbbbb8e;
+.bordernone {
+  border-bottom: none !important;
 }
-.bordernone{
-    border-bottom: none !important;
+.bluepiechart {
+  margin-right: 12px;
 }
-.bluepiechart{
-    margin-right: 12px;
+.propstatusdiv {
+  width: 33%;
 }
-.propstatusdiv{
-    width: 33%;
+.propsstatsubheading {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 9px;
+  line-height: 19px;
 }
-.propsstatsubheading{
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-    margin-bottom: 9px;
-    line-height: 19px;
+.propsstatstotal {
+  color: #7c828d;
+  font-size: 14px;
 }
-.propsstatstotal{
-    color: #7c828d;
-    font-size: 14px;
+.budgetrnge-section {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 45px;
 }
-.budgetrnge-section{
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 45px;
+.budgetrngwrapper {
+  width: 33%;
 }
-.budgetrngwrapper{
-    width: 33%;
+.budgetrngcontent {
+  background-color: #fff;
+  padding: 18px 29px 25px 28px;
+  text-align: center;
+  border-radius: 10px;
 }
-.budgetrngcontent{
-    background-color: #fff;
-    padding: 18px 29px 25px 28px;
-    text-align: center;
-    border-radius: 10px;
+.budgetrngcontentdiv {
+  border-bottom: 1px solid #bbbbbb8e;
+  padding-top: 49px;
 }
-.budgetrngcontentdiv{
-    border-bottom:   1px solid #bbbbbb8e; 
-    padding-top: 49px;
+.budgetrngcontentdiv > h1 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #666666;
+  margin-bottom: 13px;
 }
-.budgetrngcontentdiv>h1{
-    font-size: 14px;
-    font-weight: 700;
-    color: #666666;
-    margin-bottom: 13px;
+.budgetrngcontentdiv > p {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 41px;
+  color: #2e6af0;
 }
-.budgetrngcontentdiv>p{
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 41px;
-    color: #2e6af0;
-}
-
 
 :root {
   --customblue: #2e6af0;
