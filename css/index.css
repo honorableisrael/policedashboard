@@ -105,6 +105,7 @@ body{
 }
 .dashbord-main{
     background-color: #f9f9f9;
+    padding: 0px 24px;
 }
 .dshboadsearchbar{
     border: none;
@@ -215,7 +216,7 @@ body{
     margin-bottom: 45px;
 }
 .piechartdv{    
-    padding: 9px 31px;
+    padding: 18px 31px;
     background-color: #fff;
     border-radius: 10px;
 }
@@ -367,6 +368,9 @@ body {
   line-height: 12px;
   text-align: center;
 }
+/* .sidnnavrow{
+    border: 1px solid #bbbbbb8e;
+} */
 .rightsidewrapp {
   background: #f9f9f9;
   padding-top: 4rem;
@@ -540,4 +544,111 @@ button:focus {
 .lostbtn{
     max-width: 200px;
     margin-top: 2rem;
+}
+.mobileserchwrapper{
+    display: none;
+}
+
+.mobilecardcarousel::-webkit-scrollbar {
+    width: 0;
+    background-color: var(--secondary-background-color);
+  }
+  
+  .mobilecardcarousel {
+    height: 120px;
+    padding: 0 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex ;
+    align-items: center;
+     overflow-Y: hidden; 
+     padding: 0 0;
+     overflow-X: auto; 
+     justify-content: space-around;
+     display: none;
+  }
+  .mobChartdiv{
+    padding: 93px 30px 8px 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: none;
+    width: 100%;
+  }
+  .mobileviewreqprop{
+    display: none;
+  }
+  .reqpropdiv{
+    display: block;
+  }
+/* mobile responsiveness */
+@media (max-width: 760px){
+  .sidenav{
+    display: none;
+  }
+  .officerstatuscntner{
+    display: none;
+  }
+    .mobilecardcarousel {
+        overflow-x: scroll;
+      }
+    .sidnnavrow{
+        display: none;
+    }
+    .srchcntainer{
+        display: none;
+    }
+    .srchline{
+        display: none;
+    }
+    .mobilsdnavdvder{
+        border: 1px solid #bbbbbb8e;
+    }
+    .mobileserchwrapper{
+        display: flex;
+        padding-top: 18px;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    .mobiledshboadsearchbar{
+        height: 50px;
+        border-radius: 6px;
+        padding: 9px;
+        border: none;
+        outline: none;
+        padding-left: 34px;
+    }
+    .mobserchimg{
+        position: relative;
+        top: -36px;
+        left: 8px;
+    }
+    .reqlocsectn{
+      flex-direction: column;
+    }
+    .graphdv{
+      display: none;
+    }
+    .mobChartdiv{
+      display: block;
+    }
+    .propstatusdiv {
+      width: 100%;
+  }
+  .mobchrtwrapper{
+    margin-bottom: 30px;
+  }
+  .budgetrnge-section{
+    flex-direction: column;
+  }
+  .budgetrngwrapper {
+    width: 100%;
+    margin-bottom: 33px;
+ }
+ .mobileviewreqprop{
+   display: block;
+   margin-bottom: 45px;
+ }
+ .reqpropdiv{
+   display: none;
+ }
 }
