@@ -391,16 +391,12 @@
             <div class="budgetrnge-section">
               <div class="mobileviewreqprop">
                 <p class="propsstatsprimmheading">Request by Property Type</p>
-                <img
-                  src="../images/mobChart.png"
-                  class="mobChartdiv img-fluid"
-                  alt="pic"
-                />
-                <img
-                  src="../images/prop-graph.png"
-                  class="graphdv img-fluid"
-                  alt="pic"
-                />
+                <canvas
+                  id="propertytype2a"
+                  class="graphdv"
+                  width="600"
+                  height="345px"
+                ></canvas>
               </div>
               <div class="budgetrngwrapper">
                 <p class="propsstatsprimmheading">Request Budget Range</p>
@@ -439,14 +435,7 @@
       var myChart1 = new Chart(ctx1, {
         type: "bar",
         data: {
-          labels: [
-            "ABJ",
-            "LAG",
-            "OGUN",
-            "PH",
-            "CAL",
-            "IMO",
-          ],
+          labels: ["ABJ", "LAG", "OGUN", "PH", "CAL", "IMO"],
           datasets: [
             {
               // label: "# of Votes",
@@ -490,10 +479,67 @@
         },
       });
       //Bar chart for hot locations ends
-      // Bar Chart starts for Request by property type
+      // Bar Chart starts for Request by property type 
       var ctx2 = document.getElementById("propertytype");
       Chart.defaults.global.legend.display = false;
       var myChart2 = new Chart(ctx2, {
+        type: "bar",
+        data: {
+          labels: [
+            "Bungalow",
+            "Missionette",
+            "Duplex",
+            "Mansion",
+            "Semi- Detached",
+            "Flats",
+          ],
+          datasets: [
+            {
+              // label: "# of Votes",
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                grayColor,
+                highestColor,
+                grayColor,
+                grayColor,
+                grayColor,
+                grayColor,
+              ],
+              borderColor: [
+                grayColor,
+                highestColor,
+                grayColor,
+                grayColor,
+                grayColor,
+                grayColor,
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  beginAtZero: true,
+                },
+              },
+            ],
+            responsive: true,
+            xAxes: [
+              {
+                barPercentage: 0.3,
+              },
+            ],
+          },
+        },
+      });
+      // Bar Chart ends
+       // Bar Chart starts for Request by property type mobile view
+      var ctx2a= document.getElementById("propertytype2a");
+      Chart.defaults.global.legend.display = false;
+      var myChart2a = new Chart(ctx2a, {
         type: "bar",
         data: {
           labels: [
