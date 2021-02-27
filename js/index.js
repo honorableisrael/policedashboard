@@ -15,12 +15,14 @@ function showhide() {
 }
 function hidesidenav() {
   let element = document.getElementById("mobilesideclass");
-  console.log(element.className.split(""))
-  if(!element.className.includes("secondhide")){
+  console.log(element.className.split(""));
+  if (!element.className.includes("secondhide")) {
     // element.className= [""]
-    console.log("hidinghere")
-    return
-  };
+    console.log("hidinghere");
+    return;
+  }
   console.log("oops");
   element.classList.toggle("secondhide");
 }
+
+//hidenav function ends

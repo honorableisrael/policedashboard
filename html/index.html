@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
     <title>Dashboard_police</title>
     <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/animate.css" />
+    <script src="../js/dist/Chart.js"></script>
     <script src="../js/index.js"></script>
   </head>
   <body>
@@ -105,11 +107,14 @@
           </div>
           <!-- sidebar -->
           <div class="">
-            <div class="sidebar mobihide animated fadeInLeft" id="mobilesideclass">
+            <div
+              class="sidebar mobihide animated fadeInLeft"
+              id="mobilesideclass"
+            >
               <div class="sidenav mobilesidenav">
                 <div class="toggleleft">
-                    <span onclick="showhide()" class="tomes">&times;</span>
-                  </div>
+                  <span onclick="showhide()" class="tomes">&times;</span>
+                </div>
                 <div class="sdnpddeddv">
                   <div class="logo-section">
                     <div class="logosectionimg">
@@ -244,7 +249,6 @@
               </div>
             </div>
             <div class="officerstatuscntner" onclick="hidesidenav()">
-              
               <div class="cards card-green">
                 <div class="officerstatuslogo">
                   <img src="../images/green-avatar.png" alt="pic" />
@@ -323,23 +327,26 @@
             <div class="reqlocsectn">
               <div class="mobchrtwrapper" onclick="hidesidenav()">
                 <p class="propsstatsprimmheading">Requests by Hot Locations</p>
-                <img
-                  src="../images/graph.png"
-                  class="graphdv img-fluid"
-                  alt="pic"
-                />
-                <img
-                  src="../images/mobChart.png"
-                  class="mobChartdiv img-fluid"
-                  alt="pic"
-                />
+                <canvas
+                  id="hotlocations"
+                  class="graphdv"
+                  width="600"
+                  height="330px"
+                ></canvas>
               </div>
               <div class="propstatusdiv">
                 <p class="propsstatsprimmheading">Property Status</p>
                 <div class="piechartdv">
                   <div class="chartwrapper">
-                    <div class="bluepiechart">
-                      <img src="../images/blue-piechart.png" alt="pic" />
+                    <div class="bluepiechart piechartcontainer">
+                      <div class="pietext"><span class="cmet">75%</span></div>
+                      <canvas
+                        id="piechartmodule"
+                        height="204px"
+                        width="86px"
+                        style="position: relative; right: 0rem; bottom: 3.7rem"
+                      >
+                      </canvas>
                     </div>
                     <div>
                       <p class="propsstatsubheading">Completed</p>
@@ -347,8 +354,15 @@
                     </div>
                   </div>
                   <div class="chartwrapper">
-                    <div class="bluepiechart">
-                      <img src="../images/red-piechart.png" alt="pic" />
+                    <div class="bluepiechart piechartcontainer">
+                      <div class="pietext"><span class="cmet">62%</span></div>
+                      <canvas
+                        id="piechartmodule1"
+                        height="204px"
+                        width="86px"
+                        style="position: relative; right: 0rem; bottom: 3.7rem"
+                      >
+                      </canvas>
                     </div>
                     <div>
                       <p class="propsstatsubheading">Off Plan</p>
@@ -356,8 +370,15 @@
                     </div>
                   </div>
                   <div class="chartwrapper bordernone">
-                    <div class="bluepiechart">
-                      <img src="../images/green-piechart.png" alt="pic" />
+                    <div class="bluepiechart piechartcontainer">
+                      <div class="pietext"><span class="cmet">82%</span></div>
+                      <canvas
+                        id="piechartmodule2"
+                        height="204px"
+                        width="86px"
+                        style="position: relative; right: 0rem; bottom: 3.7rem"
+                      >
+                      </canvas>
                     </div>
                     <div>
                       <p class="propsstatsubheading">Under Constuction</p>
@@ -396,26 +417,240 @@
               </div>
               <div class="reqpropdiv">
                 <p class="propsstatsprimmheading">Request by Property Type</p>
-                <img
-                  src="../images/mobChart.png"
-                  class="mobChartdiv img-fluid"
-                  alt="pic"
-                />
-                <img
-                  src="../images/prop-graph.png"
-                  class="graphdv img-fluid"
-                  alt="pic"
-                />
+                <canvas
+                  id="propertytype"
+                  class="graphdv"
+                  width="600"
+                  height="345px"
+                ></canvas>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Optional JavaScript -->
+    <!-- JavaScript -->
+    <script>
+      //Bar chart for hot locations starts
+      const grayColor = "rgba(115, 136, 169, 0.353283)";
+      const highestColor = "#2E6AF0";
+      var ctx1 = document.getElementById("hotlocations");
+      Chart.defaults.global.legend.display = false;
+      var myChart1 = new Chart(ctx1, {
+        type: "bar",
+        data: {
+          labels: [
+            "ABJ",
+            "LAG",
+            "OGUN",
+            "PH",
+            "CAL",
+            "IMO",
+          ],
+          datasets: [
+            {
+              // label: "# of Votes",
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                grayColor,
+                highestColor,
+                grayColor,
+                grayColor,
+                grayColor,
+                grayColor,
+              ],
+              borderColor: [
+                grayColor,
+                highestColor,
+                grayColor,
+                grayColor,
+                grayColor,
+                grayColor,
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  beginAtZero: true,
+                },
+              },
+            ],
+            responsive: true,
+            xAxes: [
+              {
+                barPercentage: 0.3,
+              },
+            ],
+          },
+        },
+      });
+      //Bar chart for hot locations ends
+      // Bar Chart starts for Request by property type
+      var ctx2 = document.getElementById("propertytype");
+      Chart.defaults.global.legend.display = false;
+      var myChart2 = new Chart(ctx2, {
+        type: "bar",
+        data: {
+          labels: [
+            "Bungalow",
+            "Missionette",
+            "Duplex",
+            "Mansion",
+            "Semi- Detached",
+            "Flats",
+          ],
+          datasets: [
+            {
+              // label: "# of Votes",
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                grayColor,
+                highestColor,
+                grayColor,
+                grayColor,
+                grayColor,
+                grayColor,
+              ],
+              borderColor: [
+                grayColor,
+                highestColor,
+                grayColor,
+                grayColor,
+                grayColor,
+                grayColor,
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  beginAtZero: true,
+                },
+              },
+            ],
+            responsive: true,
+            xAxes: [
+              {
+                barPercentage: 0.3,
+              },
+            ],
+          },
+        },
+      });
+      // Bar Chart ends
+
+      // Module  Pie Chart Controller Starts
+      // first pie chart
+      const piechartEl = document.getElementById("piechartmodule");
+      var myPieChart = new Chart(piechartEl, {
+        type: "pie",
+        data: {
+          datasets: [
+            {
+              data: [8, 92],
+              // Notice the borderColor
+              borderColor: ["rgba(115, 136, 169, 0.253283)", "#147AD6"],
+              borderWidth: [1, 2],
+              weight: 5,
+              borderAlign: "center",
+              backgroundColor: ["rgba(115, 136, 169, 0.353283)", "#147AD6"],
+            },
+          ],
+        },
+        options: {
+          title: {
+            // display: true,
+          },
+          tooltips: { enabled: false },
+          hover: { mode: null },
+          cutoutPercentage: 92,
+          rotation: -0.7 * Math.PI,
+        },
+      });
+      // second pie chart
+      const piechartEl2 = document.getElementById("piechartmodule1");
+      var myPieChart2 = new Chart(piechartEl2, {
+        type: "pie",
+        data: {
+          datasets: [
+            {
+              data: [28, 62],
+              // Notice the borderColor
+              borderColor: ["rgba(115, 136, 169, 0.253283)", "#FF523D"],
+              borderWidth: [1, 2],
+              weight: 5,
+              borderAlign: "center",
+              backgroundColor: ["rgba(115, 136, 169, 0.353283)", "#FF523D"],
+            },
+          ],
+        },
+        options: {
+          title: {
+            // display: true,
+          },
+          tooltips: { enabled: false },
+          hover: { mode: null },
+          cutoutPercentage: 92,
+          rotation: -0.7 * Math.PI,
+        },
+      });
+      // third pie chart
+      const piechartEl3 = document.getElementById("piechartmodule2");
+      var myPieChart3 = new Chart(piechartEl3, {
+        type: "pie",
+        data: {
+          datasets: [
+            {
+              data: [18, 82],
+              // Notice the borderColor
+              borderColor: ["rgba(115, 136, 169, 0.253283)", "#79D2DE"],
+              borderWidth: [1, 2],
+              weight: 5,
+              borderAlign: "center",
+              backgroundColor: ["rgba(115, 136, 169, 0.353283)", "#79D2DE"],
+            },
+          ],
+        },
+        options: {
+          title: {
+            // display: true,
+          },
+          tooltips: { enabled: false },
+          hover: { mode: null },
+          cutoutPercentage: 92,
+          rotation: -0.7 * Math.PI,
+        },
+      });
+
+      // Module  Pie Chart Controller Ends
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="src/index.js"></script>
-    <script src="../bootstrap/jquery.min.js.js"></script>
+    <script src="../bootstrap/js/jquery.min.js.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -239,6 +239,8 @@ body {
 }
 .bluepiechart {
   margin-right: 12px;
+  width: 75px;
+  height: 75px;
 }
 .propstatusdiv {
   width: 33%;
@@ -771,4 +773,36 @@ button:focus {
   font-size: 2p;
   font-size: 2em;
   z-index: 222;
+}
+
+.piechartcontainer {
+  width: 75px;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+}
+/* #piechartmodule {
+  height: 86px !important;
+  width: 204px !important;
+  position: relative;
+  right: 4rem;
+  bottom: 1.5rem;
+} */
+
+.pietext{
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+  position: absolute;
+  /* top: 7.3rem;    */
+}
+.cmet{
+  position: relative;
+  top: 1.18rem;
+  left: 1rem;
+  font-weight: 900;
 }
