@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=egde">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <title>Dashboard_police</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- bootstrap table cdn -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 sidenav">
+                    <div class="sdnpddeddv">
+                        <div class="logo-section">
+                            <div class="logosectionimg"><img src="../images/gs-logo.png" /></div>
+                            <div class="logosctncontent">
+                                <div class="cmpnynmedv">
+                                    <h1>NPFPDCC</h1>
+                                    <div>
+                                        <img src="../images/arrow-down.png" alt="arr">
+                                    </div>
+                                </div>
+                                <p>Gloria Sunday - Admin</p>
+                            </div>
+                        </div>
+                        <div class="sidenavlinkscontainer">
+                            <a href="./index.html">
+                                <div class="sidenavlinks dashbord">
+
+                                    <img src="../images/Home.png" alt="logo" />
+                                    Dashboard
+                                </div>
+                            </a>
+                            <div class="sidenav-titiles">Officers</div>
+                            <a href="./registeredofficers.html">
+                                <div class="sidenavlinks dashbord">
+                                    <img src="../images/Users.png" class="userslogo" alt="logo" />
+                                    Registered Officers
+                                </div>
+                            </a>
+                            <div class="sidenav-titiles">Manage Sales</div>
+                            <a href="./propertyrequest.html">
+                                <div class="sidenavlinks managesaleslist">
+
+                                    <img src="../images/Document.png" alt="logo" />
+                                    Property Requests
+                                </div>
+                            </a>
+                            <div class="sidenavlinks managesaleslist">
+
+                                <img src="../images/Location.png" alt="logo" />
+                                Requests by Zone
+                            </div>
+                            <div class="sidenavlinks managesaleslist">
+
+                                <img src="../images/Bookmark.png" alt="logo" />
+                                Requests by Ranks
+                            </div>
+                            <a href="">
+                                <div class="sidenavlinks dashbord">
+
+                                    <img src="../images/InfoSquare.png" alt="logo" />
+                                    Property Enquiries
+                                </div>
+                            </a>
+                            <div class="sidenav-titiles ">Projects</div>
+                            <a href="./currentproject.html">
+                                <div class="sidenavlinks managesaleslist">
+    
+                                    <img src="../images/Work.png" alt="logo" />
+                                    Current Projects
+                                </div>
+                            </a>
+                            <a href="./proposedproject.html">
+                                <div class="sidenavlinks managesaleslist">
+
+                                    <img src="../images/Paper.png" alt="logo" />
+                                    Proposed Projects
+                                </div>
+                            </a>
+                            <a href="./agents.html">
+                                <div class="sidenavlinks managesaleslist">
+
+                                    <img src="../images/2User.png" alt="logo" />
+                                    Agents
+                                </div>
+                            </a>
+                            <a href="./developers.html">
+                                <div class="sidenavlinks dashbord">
+
+                                    <img src="../images/Users.png" alt="logo" />
+                                    Developers
+                                </div>
+                            </a>
+                            <div class="sidenav-titiles ">Reports</div>
+                            <div class="sidenavlinks dashbord">
+
+                                <img src="../images/Document.png" alt="logo" />
+                                Generate Report
+                            </div>
+                            <div class="sidenav-titiles">Users</div>
+                            <a href="./roles.html">
+                                <div class="sidenavlinks managesaleslist">
+
+                                    <img src="../images/2User.png" alt="logo" />
+                                    Roles
+                                </div>
+                            </a>
+                            <div class="sidenavlinks managesaleslist">
+
+                                <img src="../images/2User.png" alt="logo" />
+                                Staffs
+                            </div>
+                            <div class="sidenavlinks dashbord">
+
+                                <img src="../images/Message.png" alt="logo" />
+                                Messages
+                            </div>
+                        </div>
+                        <div class="mobilsdnavdvder"></div>
+                    </div>
+                    <div class="row sidnnavrow">
+                        <img src="../images/Line.png" class="img-fluid" alt="pic">
+                    </div>
+                    <div class="sdncopyr">Copyright 2020, All Rights Reserved</div>
+                </div>
+                <div class="col-md-9 dashbord-main">
+                    <div class="srchcntainer">
+                        <form class="dashsrchfrm">
+                            <input type="search" class="form-control dshboadsearchbar" size="50" placeholder="Search through Officer List By Names or Emails" />
+                            <div className="inptbcgdimg">
+                                <img src="../images/search.png" class="serchimg" alt="img" />
+                            </div>
+                        </form>
+
+                        <div class="addpropbtn" style="display: block;">
+                            <!-- <i class="fa fa-plus" aria-hidden="true"></i> -->
+                            <img src="../images/Plus.png" alt="img" />
+                            Add Property
+                        </div>
+                    </div>
+                    <div class="row srchline" style="width: 58%;"></div>
+                    <div class="mobileserchwrapper">
+                        <form class="mobiledashsrchfrm">
+                            <input type="search" class="form-control mobiledshboadsearchbar" size="21" placeholder="Search" />
+                            <div className="mobileinptbcgdimg">
+                                <img src="../images/search.png" class="mobserchimg" alt="img" />
+                            </div>
+                        </form>
+                        <div>
+                            <img src="../images/burger-img.png" />
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="table-responsive">
+                            <table class="table" id="mytable">
+                                <div class="tableheadingdiv">
+                                    <p class="tableheading">Property Enquiries </p>
+                                </div>
+                                <thead class="regtableheadrow">
+                                    <tr class="regtableheadrow">
+                                        <th scope="col">#</th>
+                                        <th scope="col">EMAIL</th>
+                                        <th scope="col">FULL NAME</th>
+                                        <th scope="col">PHONE</th>
+                                        <th scope="col">PROPERTY TYPE</th>
+                                        <th scope="col">PROPERTY NAME</th>
+                                        <th scope="col">PROPERTY AMOUNT</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>bosun@gmail.com</td>
+                                        <td>Olatubosun Michaels</td>
+                                        <td>+2347060936145</td>
+                                        <td>BUNGALOW</td>
+                                        <td>+2347060936145</td>
+                                        <td>N 20,000,000.00</td>
+                                    </tr>
+                                    <tr >
+                                        <th scope="row">2</th>
+                                        <td>jane@hey.com</td>
+                                        <td>Jane Isaac</td>
+                                        <td>+2347060936145</td>
+                                        <td>MISSIONETTE</td>
+                                        <td>Eden City</td>
+                                        <td>N 75,000,345.53</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>nonye@gmail.com</td>
+                                        <td>Nathaniel Banks</td>
+                                        <td>+2347060936145</td>
+                                        <td>3 BEDROOMS</td>
+                                        <td>Brains & Hammers</td>
+
+                                        <td>N 26,000,00.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>nonye@gmail.com</td>
+                                        <td>Nathaniel Banks</td>
+                                        <td>+2347060936145</td>
+                                        <td>SEMI-DETACHED</td>
+                                        <td>Brains & Hammers</td>
+
+                                        <td>N 92,000,000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>jessica@gmail.com</td>
+                                        <td>Nathaniel Banks</td>
+                                        <td>+2347060936145</td>
+                                        <td>2 BEDROOMS</td>
+                                        <td>Eko Highlands</td>
+
+                                        <td>N 53,000,000.00</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>jessica@gmail.com</td>
+                                        <td>Ogbajiogu Jessica</td>
+                                        <td>+2347060936145</td>
+                                        <td>MISSIONETTER</td>
+                                        <td>Eko Highlands</td>
+
+                                        <td>N 14,000,000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>boni@gmail.com</td>
+                                        <td>Ogbajiogu Jessica</td>
+                                        <td>+2347060936145</td>
+                                        <td>BUNGALOW</td>
+                                        <td>JOS</td>
+
+                                        <td>N 39,000,000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">8</th>
+                                        <td>boni@gmail.com</td>
+                                        <td>Nathaniel Banks</td>
+                                        <td>+2347060936145</td>
+                                        <td>3 BEDRROMS</td>
+                                        <td>Centinary City</td>
+                                        <td>N 14,000,000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">9</th>
+                                        <td>med@gmail.com</td>
+                                        <td>Nathaniel Banks</td>
+                                        <td>+2347060936145</td>
+                                        <td>BUNGALOW</td>
+                                        <td>Centinary City</td>
+
+                                        <td>N 39,000,000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">10</th>
+                                        <td>med@gmail.com</td>
+                                        <td>Nathaniel Banks</td>
+                                        <td>+2347060936145</td>
+                                        <td>SEMI-DETACHED</td>
+                                        <td>Love Garden</td>
+                                        <td>N 26,000,00.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+        $(document).ready(function () {
+            $('#mytable').DataTable();
+        });
+    </script>
+    <script src="../bootstrap/jquery.min.js.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
