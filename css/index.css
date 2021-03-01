@@ -168,7 +168,14 @@ body {
   border-radius: 5px;
   padding: 11px 12px;
   min-width: 202px;
+  min-height: 97px;
+  align-items: center;
+  margin-bottom: .4rem;
 }
+.cards p{
+  margin-bottom: 0px;
+}
+
 .card-green {
   border: 1px solid #0fbc49;
 }
