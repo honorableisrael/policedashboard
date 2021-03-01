@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=egde">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <title>Dashboard_police</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- bootstrap table cdn -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 sidenav">
+                    <div class="sdnpddeddv">
+                        <div class="logo-section">
+                            <div class="logosectionimg"><img src="../images/gs-logo.png" /></div>
+                            <div class="logosctncontent">
+                                <div class="cmpnynmedv">
+                                    <h1>NPFPDCC</h1>
+                                    <div>
+                                        <img src="../images/arrow-down.png" alt="arr">
+                                    </div>
+                                </div>
+                                <p>Gloria Sunday - Admin</p>
+                            </div>
+                        </div>
+                        <div class="sidenavlinkscontainer">
+                            <a href="./index.html">
+                                <div class="sidenavlinks dashbord">
+
+                                    <img src="../images/Home.png" alt="logo" />
+                                    Dashboard
+                                </div>
+                            </a>
+                            <div class="sidenav-titiles">Officers</div>
+                            <a href="./registeredofficers.html">
+                                <div class="sidenavlinks dashbord">
+                                    <img src="../images/Users.png" class="userslogo" alt="logo" />
+                                    Registered Officers
+                                </div>
+                            </a>
+                            <div class="sidenav-titiles">Manage Sales</div>
+                            <a href="./propertyrequest.html">
+                                <div class="sidenavlinks managesaleslist">
+
+                                    <img src="../images/Document.png" alt="logo" />
+                                    Property Requests
+                                </div>
+                            </a>
+                            <div class="sidenavlinks managesaleslist">
+
+                                <img src="../images/Location.png" alt="logo" />
+                                Requests by Zone
+                            </div>
+                            <div class="sidenavlinks managesaleslist">
+
+                                <img src="../images/Bookmark.png" alt="logo" />
+                                Requests by Ranks
+                            </div>
+                            <a href="./propertyEnquiry.html">
+                                <div class="sidenavlinks dashbord">
+
+                                    <img src="../images/InfoSquare.png" alt="logo" />
+                                    Property Enquiries
+                                </div>
+                            </a>
+                            <div class="sidenav-titiles ">Projects</div>
+                            <a href="./currentproject.html">
+                                <div class="sidenavlinks managesaleslist">
+    
+                                    <img src="../images/Work.png" alt="logo" />
+                                    Current Projects
+                                </div>
+                            </a>
+                            <a href="./proposedproject.html">
+                                <div class="sidenavlinks managesaleslist">
+
+                                    <img src="../images/Paper.png" alt="logo" />
+                                    Proposed Projects
+                                </div>
+                            </a>
+                            <a href="./agents.html">
+                                <div class="sidenavlinks managesaleslist">
+
+                                    <img src="../images/2User.png" alt="logo" />
+                                    Agents
+                                </div>
+                            </a>
+                            <a href="./developers.html">
+                                <div class="sidenavlinks dashbord">
+
+                                    <img src="../images/Users.png" alt="logo" />
+                                    Developers
+                                </div>
+                            </a>
+                            <div class="sidenav-titiles ">Reports</div>
+                            <div class="sidenavlinks dashbord">
+
+                                <img src="../images/Document.png" alt="logo" />
+                                Generate Report
+                            </div>
+                            <div class="sidenav-titiles">Users</div>
+                            <a href="./roles.html">
+                                <div class="sidenavlinks managesaleslist">
+
+                                    <img src="../images/2User.png" alt="logo" />
+                                    Roles
+                                </div>
+                            </a>
+                            <div class="sidenavlinks managesaleslist">
+
+                                <img src="../images/2User.png" alt="logo" />
+                                Staffs
+                            </div>
+                            <div class="sidenavlinks dashbord">
+
+                                <img src="../images/Message.png" alt="logo" />
+                                Messages
+                            </div>
+                        </div>
+                        <div class="mobilsdnavdvder"></div>
+                    </div>
+                    <div class="row sidnnavrow">
+                        <img src="../images/Line.png" class="img-fluid" alt="pic">
+                    </div>
+                    <div class="sdncopyr">Copyright 2020, All Rights Reserved</div>
+                </div>
+                <div class="col-md-9 dashbord-main">
+                    <div class="srchcntainer">
+                        <form class="dashsrchfrm">
+                            <input type="search" class="form-control dshboadsearchbar" size="50" placeholder="Search through Officer List By Names or Emails" />
+                            <div className="inptbcgdimg">
+                                <img src="../images/search.png" class="serchimg" alt="img" />
+                            </div>
+                        </form>
+
+                        <div class="addpropbtn" style="display: none;">
+                            <!-- <i class="fa fa-plus" aria-hidden="true"></i> -->
+                            <img src="../images/Plus.png" alt="img" />
+                            Add Property
+                        </div>
+                    </div>
+                    <div class="row srchline" style="width: 101%;"></div>
+                    <div class="mobileserchwrapper">
+                        <form class="mobiledashsrchfrm">
+                            <input type="search" class="form-control mobiledshboadsearchbar" size="21" placeholder="Search" />
+                            <div className="mobileinptbcgdimg">
+                                <img src="../images/search.png" class="mobserchimg" alt="img" />
+                            </div>
+                        </form>
+                        <div>
+                            <img src="../images/burger-img.png" />
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="table-responsive">
+                            <table class="table" id="mytable">
+                                <div class="tableheadingdiv">
+                                    <p class="tableheading">Registered Officers</p>
+                                </div>
+                                <thead class="regtableheadrow">
+                                    <tr class="regtableheadrow">
+                                        <th scope="col">#</th>
+                                        <th scope="col">POLICE ID</th>
+                                        <th scope="col">FULL NAME</th>
+                                        <th scope="col">CURRENT RANK</th>
+                                        <th scope="col">TOTAL ANNUAL PAY</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>NPF34563</td>
+                                        <td>Olatubosun Michaels</td>
+                                        <td>DPO</td>
+                                        <td>N 20,000,000,000.00</td>
+                                    </tr>
+                                    <tr class="bckcolorfade">
+                                        <th scope="row">2</th>
+                                        <td>NPF45678</td>
+                                        <td>Jane Isaac</td>
+                                        <td>AP</td>
+                                        <td>75,000,345.53</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>NPF45678</td>
+                                        <td>Nathaniel Banks</td>
+                                        <td>CORPORAL</td>
+                                        <td>N 26,000,00.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>NPF45678</td>
+                                        <td>Nathaniel Banks</td>
+                                        <td>CORPORAL</td>
+                                        <td>N 26,000,00.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>NPF45678</td>
+                                        <td>Nathaniel Banks</td>
+                                        <td>CORPORAL</td>
+                                        <td>N 26,000,00.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>NPF45678</td>
+                                        <td>Nathaniel Banks</td>
+                                        <td>CORPORAL</td>
+                                        <td>N 26,000,00.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>NPF45678</td>
+                                        <td>Nathaniel Banks</td>
+                                        <td>CORPORAL</td>
+                                        <td>N 26,000,00.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>NPF45678</td>
+                                        <td>Nathaniel Banks</td>
+                                        <td>CORPORAL</td>
+                                        <td>N 26,000,00.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">8</th>
+                                        <td>NPF45678</td>
+                                        <td>Nathaniel Banks</td>
+                                        <td>CORPORAL</td>
+                                        <td>N 26,000,00.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">9</th>
+                                        <td>NPF45678</td>
+                                        <td>Nathaniel Banks</td>
+                                        <td>CORPORAL</td>
+                                        <td>N 26,000,00.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">10</th>
+                                        <td>NPF45678</td>
+                                        <td>Nathaniel Banks</td>
+                                        <td>CORPORAL</td>
+                                        <td>N 26,000,00.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/dataTables.bootstrap.min.js"></script> -->
+
+    <script>
+        $(document).ready(function () {
+            $('#mytable').DataTable();
+        });
+    </script>
+    <script src="src/index.js"></script>
+    <script src="../bootstrap/jquery.min.js.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
