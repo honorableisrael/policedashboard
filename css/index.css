@@ -521,6 +521,9 @@ button:focus {
   .mobilesidenav {
     display: block !important;
   }
+  .propitemsdemarcatn{
+    display: none;
+  }
 }
 @media (min-width: 764px) {
   .sidebar {
@@ -1045,11 +1048,15 @@ table th {
 }
 .grenncircltxt{
   color: #666666;
+  width: fit-content;
+  min-width: 120px;
 }
 .availblpricewd{
   color: #333333;
   font-size: 16px;
   font-weight: bold;
+  width: fit-content;
+  min-width: 130px;
 }
 /* modal section design */
 .modal-content{
@@ -1143,4 +1150,45 @@ table th {
   display: inline-block;
   width: 34%;
   font-weight: 700;
+}
+
+
+@media (max-width: 564px) {
+  .estatepropsdiv{
+    font-size: 14px;
+    flex-wrap: wrap;
+  }
+  .estdecheading,.estdespara,.amentpitems,.availblpricewd,.avitemspricediv div{
+    font-size: 14px;
+  }
+  .propitemsdemarcatn{
+    display: none;
+  }
+  .estatename {
+    padding-top: 3px;
+    padding-bottom: 12px;
+  }
+  .estateprice {
+    font-size: 17px;
+  }
+  .amennitiesdiv{
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .propstypsstats{
+    width: 97%;
+    justify-content: space-between;
+  }
+  .wdlproptypesdiv{
+    flex-wrap: wrap;
+  }
+  .wdlproptypesdiv{
+    padding-bottom: 20px;
+  }
+  .wdlndpropwrapper{
+    padding: 1rem .4rem;
+  }
+  .estatename{
+    border-right: none;
+  }
 }
