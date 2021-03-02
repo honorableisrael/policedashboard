@@ -1191,4 +1191,7 @@ table th {
   .estatename{
     border-right: none;
   }
+  .slidersct{
+    margin-top: .1rem;
+  }
 }
