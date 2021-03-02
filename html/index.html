@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Dashboard_police</title>
     <link rel="stylesheet" href="../css/index.css">
 </head>
@@ -125,11 +126,11 @@
                                 </div>
                             </a>
                             <a href="./message.html">
-                            <div class="sidenavlinks dashbord">
+                                <div class="sidenavlinks dashbord">
 
-                                <img src="../images/Message.png" alt="logo" />
-                                Messages
-                            </div>
+                                    <img src="../images/Message.png" alt="logo" />
+                                    Messages
+                                </div>
                             </a>
                         </div>
                         <div class="mobilsdnavdvder"></div>
@@ -148,8 +149,7 @@
                             </div>
                         </form>
 
-                        <div class="addpropbtn">
-                            <!-- <i class="fa fa-plus" aria-hidden="true"></i> -->
+                        <div class="addpropbtn" data-toggle="modal" data-target="#addpropmodal">
                             <img src="../images/Plus.png" alt="img" />
                             Add Property
                         </div>
@@ -166,6 +166,184 @@
                             <img src="../images/burger-img.png" />
                         </div>
                     </div>
+                    <!-- modal section -->
+                    <div class="modal fade" id="addpropmodal">
+                        <div class="modal-dialog">
+                            <div class="modal-content ">
+                                <p class="mdalheader">Add New Property</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <span class="rdfrmlblslt ">
+                                            Property Developer
+                                        </span>
+                                        <select onChange={formActionHandler} class="rdseltinpt form-control" required>
+                                            <option value="" class="rdsltopt" disabled selected hidden>
+                                                --Please select--
+                                            </option>
+                                            <!-- <option value="Facebook" class="rdsltopt">
+                                                Facebook
+                                            </option>
+                                            <option value="Linkedin" class="rdsltopt">
+                                                Linkedin
+                                            </option>
+                                            <option value="Instagram" class="rdsltopt">
+                                                Instagram
+                                            </option>
+                                            <option value="Referral Link" class="rdsltopt">
+                                                Referral link
+                                            </option>
+                                            <option value="4" class="rdsltopt">
+                                                Friend
+                                            </option> -->
+                                        </select>
+                                        <div class="text-right">
+                                            <img src="../images/caret_down.png" class="drparr" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>
+                                            <span class="rdfrmlbl"> Property Name</span>
+                                            <input type="text" name="firstname" size="75" class="form-control rdsignupinput" />
+                                        </label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label>
+                                        <span class="rdfrmlbl"> Property Description</span>
+                                        <textarea class="form-control modaltxtareafld" cols="63" rows="5">
+                                    </textarea>
+                                    </label>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <span class="rdfrmlblslt ">
+                                            Development Status
+                                        </span>
+                                        <select class="rdseltinpt form-control" required>
+                                            <option value="" class="rdsltopt" disabled selected hidden>
+                                                --Please select--
+                                            </option>
+                                        </select>
+                                        <div class="text-right">
+                                            <img src="../images/caret_down.png" class="drparr" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>
+                                            <span class="rdfrmlbl"> Development Value</span>
+                                            <input type="text" name="firstname" size="75" class="form-control rdsignupinput" />
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>
+                                            <span class="rdfrmlbl">Property Price</span>
+                                            <input type="text" name="firstname" size="75" class="form-control rdsignupinput" />
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span class="rdfrmlblslt ">
+                                            Finance Option
+                                        </span>
+                                        <select class="rdseltinpt form-control" required>
+                                            <option value="" class="rdsltopt" disabled selected hidden>
+                                                --Please select--
+                                            </option>
+                                        </select>
+                                        <div class="text-right">
+                                            <img src="../images/caret_down.png" class="drparr" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>
+                                            <span class="rdfrmlbl"> Property Situated</span>
+                                            <input type="text" name="firstname" size="75" class="form-control rdsignupinput" />
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span class="rdfrmlblslt ">
+                                            Property City
+                                        </span>
+                                        <select class="rdseltinpt form-control" required>
+                                            <option value="" class="rdsltopt" disabled selected hidden>
+                                                --Please select--
+                                            </option>
+                                        </select>
+                                        <div class="text-right">
+                                            <img src="../images/caret_down.png" class="drparr" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <span class="rdfrmlblslt ">
+                                            Address
+                                        </span>
+                                        <select class="rdseltinpt form-control" required>
+                                            <option value="" class="rdsltopt" disabled selected hidden>
+                                                --Please select--
+                                            </option>
+                                        </select>
+                                        <div class="text-right">
+                                            <img src="../images/caret_down.png" class="drparr" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span class="rdfrmlblslt ">
+                                            Amenities
+                                        </span>
+                                        <select class="rdseltinpt form-control" required>
+                                            <option value="" class="rdsltopt" disabled selected hidden>
+                                                --Please select--
+                                            </option>
+                                        </select>
+                                        <div class="text-right">
+                                            <img src="../images/caret_down.png" class="drparr" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <span class="rdfrmlblslt ">
+                                            Property Bathrooms
+                                        </span>
+                                        <select class="rdseltinpt form-control" required>
+                                            <option value="" class="rdsltopt" disabled selected hidden>
+                                                --Please select--
+                                            </option>
+                                        </select>
+                                        <div class="text-right">
+                                            <img src="../images/caret_down.png" class="drparr" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span class="rdfrmlblslt ">
+                                            Property Bathrooms
+                                        </span>
+                                        <select class="rdseltinpt form-control" required>
+                                            <option value="" class="rdsltopt" disabled selected hidden>
+                                                --Please select--
+                                            </option>
+                                        </select>
+                                        <div class="text-right">
+                                            <img src="../images/caret_down.png" class="drparr" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uploadsctin">
+                                    <span class="uploadbtn"><img src="../images/Upload.png"> Upload Images</span>
+                                    <p> we accept jpegs, png, jpg, pdf and gif. Each file must not be more that 2Mb</p>
+                                </div>
+                                <div class="mdbtnwrapper">
+                                   <span class="addpropbtn modaladdbtn"> Add this Property</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of modal section -->
                     <div class="officerstatuscntner">
                         <div class="cards card-green">
                             <div class="officerstatuslogo">

@@ -944,3 +944,96 @@ table th {
   font-size: 16px;
   font-weight: bold;
 }
+/* modal section design */
+.modal-content{
+  padding: 38px 30px;
+}
+.mdalheader{
+  font-weight: 700;
+}
+.rdfrmlblslt {
+  position: relative;
+  display: inline-block;
+  font-size: 11px;
+  top: 9px;
+  right: -13px;
+  color: #333333;
+  background-color: #fff;
+  padding: 0px 13px;
+}
+.rdseltinpt{
+  height: 50px;
+  border: 1px solid rgba(46, 106, 240, 0.1);
+  -webkit-appearance: none;
+}
+.rdseltinpt:invalid {
+  color: #9999;
+  font-size: 11px;
+}
+.rdsltopt {
+  text-overflow: ellipsis;
+  width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.rdfrmlbl {
+  position: relative;
+  display: inline-block;
+  font-size: 11px;
+  top: 9px;
+  color: #333333;
+  right: -13px;
+  font-weight: 300;
+  background-color: #fff;
+  padding: 0px 13px;
+}
+.text-right {
+  text-align: right;
+  position: relative;
+  top: -36px;
+  right: 22px;
+}
+.rdsignupinput {
+  border: 1px solid rgba(46, 106, 240, 0.1);
+  outline: none;
+  height: 50px;
+  border-radius: 4px;
+}
+.rdsignupinput:focus {
+  outline: none !important;
+}
+.rdsignupinput::placeholder {
+  font-size: 11px;
+  color: #9999;
+}
+.modaltxtareafld{
+  border: 1px solid rgba(46, 106, 240, 0.1);
+  border-radius: 4px;
+}
+.uploadsctin{
+  text-align: center;
+  font-size: 11px;
+  padding: 24px;
+  margin-bottom: 23px;
+  color: #999999;
+  background-color: #f2f2f2;
+}
+.uploadbtn {
+  display: inline-block;
+  background-color: #999999;
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 12px;
+  padding: 8px 14px;
+  font-weight: 700;
+  border-radius: 8px;
+}
+.mdbtnwrapper{
+  text-align: center;
+}
+.modaladdbtn{
+  padding: 11px;
+  display: inline-block;
+  width: 34%;
+  font-weight: 700;
+}
