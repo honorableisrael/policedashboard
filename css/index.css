@@ -880,6 +880,7 @@ table th {
 .zonalheaders{
   padding: 12px 6px;
   font-size: 12px;
+  text-align: center;
   font-weight: 700;
   border-radius: 16px;
   background-color: #ffffff;
@@ -889,4 +890,257 @@ table th {
   background-color: #f5f5f5 !important;
   padding: 6px 5px !important;
   border: none !important;
+}
+.zonreqimg{
+  margin-top: 50px;
+    padding: 39px 18px;
+    background-color: #fff;
+    border-radius: 16px;
+}
+.greystats{
+  color: #999999;
+  background: #f5f5f5;
+}
+.SE{
+  color: #999999;
+  background: #f9f9f9;
+}
+.zonreqimg>img{
+  margin-bottom: 40px;
+}
+.zonreqimg>div{
+  text-align: center;
+  padding-top: 51px;
+  font-weight: 700;
+  border-top: 1px solid #d8d8d8;
+}
+.zonalheaders:active{
+  box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.16);
+}
+.mssgeheading{
+  font-weight: 700;
+  font-size: 20px;
+  padding-top: 113px;
+}
+.msg-content{
+  text-align: center;
+ padding-top: 50px;
+}
+.msg-content>p{
+  font-size: 16px;
+  color: #999999;
+  margin: 5px 0px 22px 0px;
+}
+.msg-content>span{
+  background-color: #2e6af0;
+  color: #ffffff;
+  padding: 10px 19px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.wdlndpropwrapper{
+  padding: 20px;
+}
+.slidersct{
+  margin-top: 46px;
+}
+.estatecntntdiv{
+  display: flex;
+  align-items: flex-end;
+  padding-top: 15px;
+  justify-content: space-between;
+}
+.estatename{
+  font-size: 16px;
+  font-weight: 700;
+  width: 47%;
+  padding-top: 20px;
+  padding-bottom: 31px;
+  border-right: 1px solid #bbbbbb;
+}
+.estatepricediv{
+  padding-bottom:  20px;
+}
+.prrng{
+  color: #666666;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.estateprice{
+  color: #2e6af0;
+  font-weight: 700;
+  font-size: 28px;
+  margin: 0;
+}
+.estatepropsdiv{
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  padding: 20px 0px;
+  color: #666666;
+  border-bottom: 1px solid #bbbbbb;
+  border-top: 1px solid #bbbbbb;
+}
+.ntavailable{
+  color: #eb5757;
+}
+.amennitiesdiv{
+  display: flex;
+  justify-content: space-evenly;
+}
+.estdecheading{
+  font-weight: 700;
+  font-size: 16px;
+  color: #333333;
+}
+.estdespara{
+  color: #666666;
+  margin-bottom: 0;
+}
+.estdescriptindiv{
+  padding: 20px 0px;
+  border-bottom: 1px solid #bbbbbb;
+}
+.ammimg{
+  margin-right: 12px;
+}
+.amentpitems{
+  margin-bottom:13px;
+}
+.amennitiessectn{
+  padding: 20px 0px 30px 0px;
+  color: #2e6af0;
+  border-bottom: 1px solid #bbbbbb;
+}
+.wdlproptypesdiv{
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 40px;
+  justify-content: space-between;
+}
+.propstypsstats{
+  width: 23%;
+  display: flex;
+  color: #666666;
+  justify-content: space-around;
+}
+.greencircle{
+  margin-right: 5px;
+}
+.wdlproptypesection{
+  padding-bottom: 70px;
+}
+.avitemspricediv{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+.propitemsdemarcatn{
+  border: 1px solid #bbbbbb;
+}
+.demarctndiv{
+  width: 58%;
+}
+.grenncircltxt{
+  color: #666666;
+}
+.availblpricewd{
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* modal section design */
+.modal-content{
+  padding: 38px 30px;
+}
+.mdalheader{
+  font-weight: 700;
+}
+.rdfrmlblslt {
+  position: relative;
+  display: inline-block;
+  font-size: 11px;
+  top: 9px;
+  right: -13px;
+  color: #333333;
+  background-color: #fff;
+  padding: 0px 13px;
+}
+.rdseltinpt{
+  height: 50px;
+  border: 1px solid rgba(46, 106, 240, 0.1);
+  -webkit-appearance: none;
+}
+.rdseltinpt:invalid {
+  color: #9999;
+  font-size: 11px;
+}
+.rdsltopt {
+  text-overflow: ellipsis;
+  width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.rdfrmlbl {
+  position: relative;
+  display: inline-block;
+  font-size: 11px;
+  top: 9px;
+  color: #333333;
+  right: -13px;
+  font-weight: 300;
+  background-color: #fff;
+  padding: 0px 13px;
+}
+.text-right {
+  text-align: right;
+  position: relative;
+  top: -36px;
+  right: 22px;
+}
+.rdsignupinput {
+  border: 1px solid rgba(46, 106, 240, 0.1);
+  outline: none;
+  height: 50px;
+  border-radius: 4px;
+}
+.rdsignupinput:focus {
+  outline: none !important;
+}
+.rdsignupinput::placeholder {
+  font-size: 11px;
+  color: #9999;
+}
+.modaltxtareafld{
+  border: 1px solid rgba(46, 106, 240, 0.1);
+  border-radius: 4px;
+}
+.uploadsctin{
+  text-align: center;
+  font-size: 11px;
+  padding: 24px;
+  margin-bottom: 23px;
+  color: #999999;
+  background-color: #f2f2f2;
+}
+.uploadbtn {
+  display: inline-block;
+  background-color: #999999;
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 12px;
+  padding: 8px 14px;
+  font-weight: 700;
+  border-radius: 8px;
+}
+.mdbtnwrapper{
+  text-align: center;
+}
+.modaladdbtn{
+  padding: 11px;
+  display: inline-block;
+  width: 34%;
+  font-weight: 700;
 }
