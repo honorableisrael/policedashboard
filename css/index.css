@@ -812,8 +812,8 @@ button:focus {
 }
 .cmet{
   position: relative;
-  top: 1.18rem;
-  left: 1rem;
+  top: 1.49rem;
+  left: 1.1rem;
   font-weight: 900;
 }
 /* registerd officers page styling */
@@ -1194,4 +1194,24 @@ table th {
   .slidersct{
     margin-top: .1rem;
   }
+}
+/* hiding data tables injected ui components */
+.table-responsive .form-inline {
+  display: block;
+  overflow-x: hidden;
+}
+.dashbord-main{
+  overflow-x: hidden;
+}
+.dataTables_length{
+  display: none;
+}
+#agent_paginate{
+  display: none;
+}
+.dataTables_info{
+  display: none;
+}
+#agent_filter label{
+  display: none !important;
 }
