@@ -693,6 +693,7 @@ button:focus {
     display: none !important;
   }
 }
+
 @media (max-width: 800px) {
   .reqlocsectn {
     flex-direction: column;
@@ -1160,52 +1161,6 @@ table th {
   font-weight: 700;
 }
 
-@media (max-width: 564px) {
-  .estatepropsdiv {
-    font-size: 14px;
-    flex-wrap: wrap;
-  }
-  .estdecheading,
-  .estdespara,
-  .amentpitems,
-  .availblpricewd,
-  .avitemspricediv div {
-    font-size: 14px;
-  }
-  .propitemsdemarcatn {
-    display: none;
-  }
-  .estatename {
-    padding-top: 3px;
-    padding-bottom: 12px;
-  }
-  .estateprice {
-    font-size: 17px;
-  }
-  .amennitiesdiv {
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .propstypsstats {
-    width: 97%;
-    justify-content: space-between;
-  }
-  .wdlproptypesdiv {
-    flex-wrap: wrap;
-  }
-  .wdlproptypesdiv {
-    padding-bottom: 20px;
-  }
-  .wdlndpropwrapper {
-    padding: 1rem 0.4rem;
-  }
-  .estatename {
-    border-right: none;
-  }
-  .slidersct {
-    margin-top: 0.1rem;
-  }
-}
 /* hiding data tables injected ui components */
 .table-responsive .form-inline {
   display: block;
@@ -1302,4 +1257,75 @@ table th {
 }
 .reqdatacntnt {
   margin-bottom: 10px;
+}
+
+@media (max-width: 564px) {
+  .estatepropsdiv {
+    font-size: 14px;
+    flex-wrap: wrap;
+  }
+  .estdecheading,
+  .estdespara,
+  .amentpitems,
+  .availblpricewd,
+  .avitemspricediv div {
+    font-size: 14px;
+  }
+  .propitemsdemarcatn {
+    display: none;
+  }
+  .estatename {
+    padding-top: 3px;
+    padding-bottom: 12px;
+  }
+  .estateprice {
+    font-size: 17px;
+  }
+  .amennitiesdiv {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .propstypsstats {
+    width: 97%;
+    justify-content: space-between;
+  }
+  .wdlproptypesdiv {
+    flex-wrap: wrap;
+  }
+  .wdlproptypesdiv {
+    padding-bottom: 20px;
+  }
+  .wdlndpropwrapper {
+    padding: 1rem 0.4rem;
+  }
+  .estatename {
+    border-right: none;
+  }
+  .slidersct {
+    margin-top: 0.1rem;
+  }
+  .regoffdashbdwrapper {
+    padding: 20px 12px;
+  }
+  .incmeprice {
+    font-size: 12px;
+  }
+  .dashbord-main {
+    padding: 1px 8px;
+  }
+  .regoffprimaryheading,.regoffsubheading{
+    font-size: 12px;
+  }
+  .regoffdshheading{
+    flex-wrap: wrap;
+  }
+  .reqdatasctn{
+    padding: 21px 0px 20px 0px;
+    flex-wrap: wrap;
+  }
+  .reqdatasctn .col-md-3{
+    margin-bottom: .4rem;
+    padding-left: 0px;
+  }
+  
 }

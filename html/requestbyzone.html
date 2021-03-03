@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=egde">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
@@ -15,8 +14,8 @@
     <!-- bootstrap table cdn -->
     <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css"> -->
     <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="../js/dist/Chart.js"></script>
 </head>
-
 <body>
     <div>
         <div class="container-fluid">
@@ -172,7 +171,6 @@
                     <div class="container-fluid">
                         <div class="table-responsive" style="background-color:#f9f9f9">
                             <table class="table reqzonetable" id="agent">
-
                                 <div class="tableheadingdiv " style="padding-left:0;">
                                     <p class="tableheading">Requests by Zone</p>
                                     <div class="addpropbtn rolebtn" style="display:none">
@@ -225,7 +223,12 @@
                               
                             </table>
                             <div class="zonreqimg">
-                                    <img src="../images/zonalchart.png" class="img-fluid">
+                                <canvas
+                                id="hotlocations"
+                                class="graphdv"
+                                width="600"
+                                height="330px"
+                              ></canvas>
                                     <div >
                                             South-South
                                             <span class="crrntpjectstats bluestats">52</span>
@@ -258,6 +261,58 @@
       $(document).ready(function () {
         $("#agent").DataTable();
       });
+      //data table function ends here
+      const grayColor = "rgba(115, 136, 169, 0.353283)";
+      const highestColor = "#2E6AF0";
+      var ctx1 = document.getElementById("hotlocations");
+      Chart.defaults.global.legend.display = false;
+      var myChart1 = new Chart(ctx1, {
+        type: "bar",
+        data: {
+          labels: ["ABJ", "LAG", "OGUN", "PH", "CAL", "IMO"],
+          datasets: [
+            {
+              // label: "# of Votes",
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                grayColor,
+                highestColor,
+                grayColor,
+                grayColor,
+                grayColor,
+                grayColor,
+              ],
+              borderColor: [
+                grayColor,
+                highestColor,
+                grayColor,
+                grayColor,
+                grayColor,
+                grayColor,
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  beginAtZero: true,
+                },
+              },
+            ],
+            responsive: true,
+            xAxes: [
+              {
+                barPercentage: 0.3,
+              },
+            ],
+          },
+        },
+      });
+      //Bar chart for hot locations ends
     </script>
     <script src="../bootstrap/jquery.min.js.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
