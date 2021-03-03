@@ -166,6 +166,7 @@ body{
 }
 .card-red{
   border:1px solid #ff523d;
+  width: 21%;
 }
 .card-purple {
   border: 1px solid #aa3dff;
@@ -740,6 +741,7 @@ table th {
 }
 .crrntpjectstats{
   display: inline-block;
+  cursor: pointer;
   font-size: 12px;
   line-height: 14px;
   border-radius: 8px;
@@ -1036,4 +1038,81 @@ table th {
   display: inline-block;
   width: 34%;
   font-weight: 700;
+}
+.regoffdashbdwrapper{
+  background-color: #ffffff;
+  border-radius: 40px;
+  padding: 43px 37px;
+  margin-top: 55px;
+}
+.regoffdshheading{
+  display: flex;
+  border-bottom: 1px solid rgba(46, 106, 240, 0.1);
+  padding-bottom: 30px;
+  justify-content: space-between;
+}
+.regoffprimaryheading{
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+.regoffsubheading{
+  font-size: 16px;
+  margin-bottom: 0px;
+  color: #666666;
+}
+.regoffdsbpaymentdv{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 29px;
+  border: 1px dashed #2E6AF0;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  margin-bottom: 18px;
+}
+.incmewrapper{
+  text-align: center;
+  padding: 40px 0px;
+}
+.incmename{
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 3px;
+}
+.incmeprice{
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  color:#2e6af0;
+}
+.incomedivider{
+  border: 1px solid rgba(46, 106, 240, 0.1);
+}
+.regoffdshbrankdiv{
+  display: flex;
+  border-top: 1px solid rgba(46, 106, 240, 0.1);
+  border-bottom: 1px solid rgba(46, 106, 240, 0.1);
+  padding-top: 34px;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+  justify-content: space-around;
+}
+.regoffaffstatsdiv{
+  width: 45%;
+}
+.reqdatasctn{
+  display: flex;
+  padding: 21px 0px 21px 42px;
+  border: 1px dashed rgba(46, 106, 240, 0.1);
+  border-radius: 8px;
+}
+.reqdatspntg{
+  background-color: #eaf0fd;
+  color: #333333;
+  font-size: 13px;
+  right: -54px;
+}
+.reqdatacntnt{
+  margin-bottom: 10px;
 }
