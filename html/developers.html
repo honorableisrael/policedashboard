@@ -17,6 +17,8 @@
       href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css"
     /> -->
     <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -25,18 +27,38 @@
         <div class="row">
           <div class="col-md-3 sidenav">
             <div class="sdnpddeddv">
-              <div class="logo-section">
-                <div class="logosectionimg">
-                  <img src="../images/gs-logo.png" />
-                </div>
-                <div class="logosctncontent">
-                  <div class="cmpnynmedv">
-                    <h1>NPFPDCC</h1>
-                    <div>
-                      <img src="../images/arrow-down.png" alt="arr" />
-                    </div>
+              <div class="logosectionwrapp">
+                <div class="logo-section">
+                  <div class="logosectionimg">
+                    <img src="../images/gs-logo.png" />
                   </div>
-                  <p>Gloria Sunday - Admin</p>
+                  <div class="logosctncontent">
+                    <div
+                      class="cmpnynmedv"
+                      data-toggle="collapse"
+                      data-target="#collapseExample"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      <h1>NPFPDCC</h1>
+                      <div>
+                        <img src="../images/arrow-down.png" alt="arr" />
+                      </div>
+                    </div>
+                    <p>Gloria Sunday - Admin</p>
+                  </div>
+                </div>
+                <div class="collapse acc11" id="collapseExample">
+                  <div class="topiconwrapper">
+                    <img src="../images/Edit.png" class="topicon" /><span
+                      class="textt1"
+                      >Edit Profile</span
+                    >
+                  </div>
+                  <div class="topiconwrapper color-logout">
+                    <img src="../images/Logout.png" class="topicon" />
+                    <span class="textt1"> Log Out</span>
+                  </div>
                 </div>
               </div>
               <div class="sidenavlinkscontainer">
@@ -179,8 +201,13 @@
             <div class="container-fluid">
               <div class="table-responsive">
                 <table class="table" id="agent">
-                  <div class="tableheadingdiv">
+                  <div class="tableheadingdiv flexhead">
                     <p class="tableheading">Developers</p>
+                    <div class="inppt">
+                      <input type="date" class="datefilter form-control" />
+                      <span class="datesep"></span>
+                      <input type="date" class="datefilter1 form-control" />
+                    </div>
                   </div>
                   <thead class="regtableheadrow">
                     <tr class="regtableheadrow">
@@ -298,6 +325,31 @@
                     </tr>
                   </tbody>
                 </table>
+                 <!-- pagination -->
+                 <div class="flexd1">
+                  <div class="showing1">
+                    Showing <span class="org1">10</span> out of
+                    <span class="org1">200</span>
+                  </div>
+                  <nav aria-label="...">
+                    <ul class="pagination pagination-lg">
+                      <li class="page-item">
+                        <a class="page-link activelink" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="thinend">...</li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">36</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <!-- pagination -->
               </div>
             </div>
           </div>
@@ -318,7 +370,7 @@
       src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap.min.js"
     ></script>
     <script src="../bootstrap/jquery.min.js.js"></script>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script>
       $(document).ready(function () {
         $("#agent").DataTable();
