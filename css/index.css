@@ -536,6 +536,9 @@ button:focus {
   .sidebar {
     display: none !important;
   }
+  .datefilter1{
+    margin-right: .7rem;
+  }
 }
 .rmem2 {
   padding-left: 5rem;
@@ -693,6 +696,29 @@ button:focus {
   .reqpropdiv {
     display: none !important;
   }
+  .inppt{
+    flex-wrap: wrap;
+  }
+  .datefilter{
+    margin-bottom: .3rem;
+  }
+  .datefilter1{
+    margin-bottom: .3rem;
+    margin-right: 1rem;
+  }
+  .flexd1{
+    flex-wrap: wrap;
+  }
+  .showing1{
+    margin-bottom: 1rem;
+    padding-left: 0px;
+  }
+  .flexd1 nav{
+    margin-left: 1.3rem;
+  }
+  .dataTables_wrapper{
+    overflow-x: scroll !important;
+  }
 }
 
 @media (max-width: 800px) {
@@ -752,6 +778,9 @@ button:focus {
   .cards {
     flex-wrap: wrap;
     margin-top: 0.4rem;
+  }
+  .dataTables_wrapper{
+    overflow-x: scroll !important;
   }
   .officerstatuscntner {
     /* justify-content: space-between; */
@@ -1397,15 +1426,18 @@ table th {
   width: 5px;
 }
 
+.flexhead{
+  flex-wrap: wrap;
+}
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px rgb(253, 250, 250); 
   border-radius: 5px;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: grey; 
+  background: rgb(252, 250, 250); 
   border-radius: 5px;
 }
 
