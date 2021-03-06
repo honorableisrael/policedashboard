@@ -19,6 +19,7 @@
     <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/animate.css" />
   </head>
   <body>
     <div>
@@ -154,6 +155,128 @@
             </div>
             <div class="sdncopyr">Copyright 2020, All Rights Reserved</div>
           </div>
+          <!-- sidebar -->
+          <div class="">
+            <div
+              class="sidebar mobihide animated fadeInLeft"
+              id="mobilesideclass"
+            >
+              <div class="sidenav mobilesidenav">
+                <div class="toggleleft">
+                  <span onclick="showhide()" class="tomes">&times;</span>
+                </div>
+                <div class="sdnpddeddv">
+                  <div class="logosectionwrapp">
+                    <div class="logo-section">
+                      <div class="logosectionimg">
+                        <img src="../images/gs-logo.png" />
+                      </div>
+                      <div class="logosctncontent">
+                        <div
+                          class="cmpnynmedv"
+                          data-toggle="collapse"
+                          data-target="#collapseExample1"
+                          aria-expanded="false"
+                          aria-controls="collapseExample"
+                        >
+                          <h1>NPFPDCC</h1>
+                          <div>
+                            <img src="../images/arrow-down.png" alt="arr" />
+                          </div>
+                        </div>
+                        <p>Gloria Sunday - Admin</p>
+                      </div>
+                    </div>
+                    <div class="collapse acc11" id="collapseExample1">
+                      <div class="topiconwrapper">
+                        <img src="../images/Edit.png" class="topicon" /><span
+                          class="textt1"
+                          >Edit Profile</span
+                        >
+                      </div>
+                      <div class="topiconwrapper color-logout">
+                        <img src="../images/Logout.png" class="topicon" />
+                        <span class="textt1"> Log Out</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sidenavlinkscontainer">
+                    <div class="sidenavlinks dashbord animated fadeInLeft">
+                      <img src="../images/Home.png" alt="logo" />
+                      Dashboard
+                    </div>
+                    <div class="sidenav-titiles">Officers</div>
+                    <div class="sidenavlinks dashbord">
+                      <img
+                        src="../images/Users.png"
+                        class="userslogo"
+                        alt="logo"
+                      />
+                      Registered Officers
+                    </div>
+                    <div class="sidenav-titiles">Manage Sales</div>
+                    <div class="sidenavlinks managesaleslist">
+                      <img src="../images/Document.png" alt="logo" />
+                      Property Requests
+                    </div>
+                    <div class="sidenavlinks managesaleslist">
+                      <img src="../images/Location.png" alt="logo" />
+                      Requests by Zone
+                    </div>
+                    <div class="sidenavlinks managesaleslist">
+                      <img src="../images/Bookmark.png" alt="logo" />
+                      Requests by Ranks
+                    </div>
+                    <div class="sidenavlinks dashbord">
+                      <img src="../images/InfoSquare.png" alt="logo" />
+                      Property Enquiries
+                    </div>
+                    <div class="sidenav-titiles">Projects</div>
+                    <div class="sidenavlinks managesaleslist">
+                      <img src="../images/Work.png" alt="logo" />
+                      Current Projects
+                    </div>
+                    <div class="sidenavlinks managesaleslist">
+                      <img src="../images/Paper.png" alt="logo" />
+                      Proposed Projects
+                    </div>
+                    <div class="sidenavlinks managesaleslist">
+                      <img src="../images/2User.png" alt="logo" />
+                      Agents
+                    </div>
+                    <div class="sidenavlinks dashbord">
+                      <img src="../images/Users.png" alt="logo" />
+                      Developers
+                    </div>
+                    <div class="sidenav-titiles">Reports</div>
+                    <div class="sidenavlinks dashbord">
+                      <img src="../images/Document.png" alt="logo" />
+                      Generate Report
+                    </div>
+                    <div class="sidenav-titiles">Users</div>
+                    <div class="sidenavlinks managesaleslist">
+                      <img src="../images/2User.png" alt="logo" />
+                      Roles
+                    </div>
+                    <div class="sidenavlinks managesaleslist">
+                      <img src="../images/2User.png" alt="logo" />
+                      Staffs
+                    </div>
+                    <div class="sidenavlinks dashbord">
+                      <img src="../images/Message.png" alt="logo" />
+                      Messages
+                    </div>
+                  </div>
+                  <div class="mobilsdnavdvder"></div>
+                </div>
+                <div class="row sidnnavrow">
+                  <img src="../images/Line.png" class="img-fluid" alt="pic" />
+                </div>
+                <div class="sdncopyr">Copyright 2020, All Rights Reserved</div>
+              </div>
+            </div>
+          </div>
+          <!-- sidebar -->
           <div class="col-md-9 dashbord-main">
             <div class="srchcntainer">
               <form class="dashsrchfrm">
@@ -191,7 +314,7 @@
                   />
                 </div>
               </form>
-              <div>
+              <div id="hamburger" onclick="showhide()">
                 <img src="../images/burger-img.png" />
               </div>
             </div>
@@ -360,6 +483,7 @@
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.5.1.js"
     ></script>
+    <script src="../js/index.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"

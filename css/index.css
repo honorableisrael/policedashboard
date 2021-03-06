@@ -536,8 +536,8 @@ button:focus {
   .sidebar {
     display: none !important;
   }
-  .datefilter1{
-    margin-right: .7rem;
+  .datefilter1 {
+    margin-right: 0.7rem;
   }
 }
 .rmem2 {
@@ -696,27 +696,27 @@ button:focus {
   .reqpropdiv {
     display: none !important;
   }
-  .inppt{
+  .inppt {
     flex-wrap: wrap;
   }
-  .datefilter{
-    margin-bottom: .3rem;
+  .datefilter {
+    margin-bottom: 0.3rem;
   }
-  .datefilter1{
-    margin-bottom: .3rem;
+  .datefilter1 {
+    margin-bottom: 0.3rem;
     margin-right: 1rem;
   }
-  .flexd1{
+  .flexd1 {
     flex-wrap: wrap;
   }
-  .showing1{
+  .showing1 {
     margin-bottom: 1rem;
     padding-left: 0px;
   }
-  .flexd1 nav{
+  .flexd1 nav {
     margin-left: 1.3rem;
   }
-  .dataTables_wrapper{
+  .dataTables_wrapper {
     overflow-x: scroll !important;
   }
 }
@@ -779,7 +779,7 @@ button:focus {
     flex-wrap: wrap;
     margin-top: 0.4rem;
   }
-  .dataTables_wrapper{
+  .dataTables_wrapper {
     overflow-x: scroll !important;
   }
   .officerstatuscntner {
@@ -1426,22 +1426,194 @@ table th {
   width: 5px;
 }
 
-.flexhead{
+.flexhead {
   flex-wrap: wrap;
 }
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgb(253, 250, 250); 
+  box-shadow: inset 0 0 5px rgb(253, 250, 250);
   border-radius: 5px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(252, 250, 250); 
+  background: rgb(252, 250, 250);
   border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background:#32335A; 
+  background: #32335a;
+}
+.msgsub {
+  font-weight: 325;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  color: #999999;
+}
+
+.fcol {
+  flex-direction: column;
+}
+.nopd {
+  margin-bottom: 0.1rem;
+}
+.msgavt {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+}
+.msgsub1 {
+  font-size: 16px;
+  line-height: 19px;
+  color: #2a1b3d;
+}
+.datte {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: #59545f;
+  width: 180px;
+  text-align: center;
+}
+.msgw1 {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  /* greys 3 */
+  margin-top: 1rem;
+  border: 1px solid #bbbbbb;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 98%;
+  height: 100px;
+  text-overflow: ellipsis;
+  overflow-y: scroll;
+}
+.firtcontainer {
+  width: 150px;
+  text-align: center;
+}
+.firtcontainer1 {
+  width: 87%;
+  text-align: left;
+}
+.msgw12 {
+  margin-left: 26px;
+}
+@media (max-width: 480px) {
+  .msgw1 {
+    flex-wrap: wrap;
+    height: 162px;
+  }
+  .firtcontainer1,
+  .firtcontainer {
+    width: 100%;
+    text-align: center;
+  }
+  .datte {
+    width: 100%;
+  }
+  .msgsub {
+    max-height: 51px;
+    overflow-y: hidden;
+  }
+  .msgw12 {
+    margin-left: 0.1rem;
+  }
+  .mssgeheading {
+    padding-left: 0.1rem;
+  }
+}
+.tble1 {
+  padding-top: 2rem;
+}
+.newmessage {
+  text-align: right;
+  width: 98%;
+}
+.nnsg {
+  background: #2e6af0;
+  border-radius: 8px;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.nessw {
+  width: 16px;
+  object-fit: cover;
+  margin-right: 0.4rem;
+}
+.boldtext {
+  font-weight: 900;
+  color: #333333;
+  font-size: 14px;
+}
+.messagecontainer {
+  margin-top: 1rem;
+  border-top: 1px solid #f5f5f5;
+  margin-left: 26px;
+  margin-right: 1rem;
+}
+.senttouser {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.3px;
+  color: rgba(42, 27, 61, 0.6);
+  background: #f5f5f5;
+  border-radius: 24px 24px 24px 0px;
+  width: fit-content;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+}
+.senttouser1 {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.3px;
+  color: rgba(42, 27, 61, 0.6);
+  background: #f0f5ff;
+  border-radius: 24px 24px 0px 24px;
+  width: fit-content;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-inline-start: auto;
+}
+.textinputarea {
+  background: #f2f2f2;
+  border-radius: 24px;
+  color: #59545f;
+  padding-top: 2rem;
+}
+.textinputarea,.textinputarea:focus {
+  width: 96%;
+  margin-left: 26px;
+  max-width: 1000px;
+  background: #f2f2f2;
+  border-radius: 24px !important;
+  height: 83px;
+  border: none;
+  outline: none;
+  padding-left: 3rem;
+}
+.items1{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem ;
+  height: max-content;
+}
+.imgattc{
+  object-fit: contain;
+  position: relative;
+  top: 4.5rem;
+}
+.secondd{
+  object-fit: contain;
+  position: relative;
+  top: 4.5rem;
+  cursor: pointer;
 }
