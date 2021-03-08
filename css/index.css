@@ -226,8 +226,10 @@ body {
 }
 .reqlocsectn {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 45px;
+  margin-left: 23px;
+  margin-right: 23px;
 }
 .piechartdv {
   padding: 9px 31px 27px 31px;
@@ -265,17 +267,22 @@ body {
 }
 .budgetrnge-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-bottom: 45px;
+  margin-left: 23px;
+  margin-right: 23px;
 }
 .budgetrngwrapper {
-  width: 33%;
+  width: 40%;
+  display: flex;
+    flex-direction: column;
 }
 .budgetrngcontent {
   background-color: #fff;
   padding: 18px 29px 25px 28px;
   text-align: center;
   border-radius: 10px;
+  height: 100%;
 }
 .budgetrngcontentdiv {
   border-bottom: 1px solid #bbbbbb8e;
@@ -513,7 +520,7 @@ button:focus {
     display: none;
   }
   .card-green {
-    max-width: 200px;
+    /* max-width: 200px; */
   }
   .cards {
     flex-wrap: nowrap !important;
@@ -617,7 +624,10 @@ button:focus {
   display: none;
 }
 .reqpropdiv {
+  width: 55%;
   display: block;
+  /* min-height: 375px;
+  max-height: 375px; */
 }
 /* mobile responsiveness */
 @media (max-width: 760px) {
@@ -749,6 +759,8 @@ button:focus {
   .reqpropdiv {
     display: block;
     margin-bottom: 44px;
+    /* min-height: 375px;
+    max-height: 375px; */
   }
   .addpropbtn {
     width: 63%;
@@ -768,7 +780,7 @@ button:focus {
     width: 59%;
   }
   .reqpropdiv {
-    width: 59%;
+    width: 55%;
   }
   .budgetrnge-section {
     padding-bottom: 143px;
@@ -934,7 +946,7 @@ table th {
   border: none !important;
 }
 .zonreqimg {
-  margin-top: 50px;
+  margin-top: 0px;
   padding: 39px 18px;
   background-color: #fff;
   border-radius: 16px;
@@ -1589,7 +1601,8 @@ table th {
   color: #59545f;
   padding-top: 2rem;
 }
-.textinputarea,.textinputarea:focus {
+.textinputarea,
+.textinputarea:focus {
   width: 96%;
   margin-left: 26px;
   max-width: 1000px;
@@ -1600,20 +1613,95 @@ table th {
   outline: none;
   padding-left: 3rem;
 }
-.items1{
+.items1 {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 3rem ;
+  padding: 1rem 3rem;
   height: max-content;
 }
-.imgattc{
+.imgattc {
   object-fit: contain;
   position: relative;
   top: 4.5rem;
 }
-.secondd{
+.secondd {
   object-fit: contain;
   position: relative;
   top: 4.5rem;
   cursor: pointer;
+}
+.cards {
+  flex: 1;
+  margin-right: 2rem;
+}
+.card-blue{
+  margin-right: 0px;
+}
+.officerstatuscntner {
+  margin: auto;
+  margin-bottom: 54px;
+  width: 95%;
+}
+@media (min-width: 1300px) {
+  .mobchrtwrapper {
+    width: 60%;
+  }
+  .piechartdv {
+    width: 100%;
+    height: 83%;
+    min-height: 330px;
+  }
+  #addpropmodal .modal-dialog{
+    width: 66%;
+    max-width: 66%;
+  }
+  .modaltxtareafld{
+    width: 100% !important;
+  }
+}
+.properds label{
+  display: contents !important;
+  width: 100%;
+}
+/* textarea .form-control */
+@media (max-width:1420px){
+  .budgetrngcontent {
+    height: 87% !important;
+  }
+}
+@media (min-width: 1490px) {
+  .piechartdv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 93%;
+    min-height: 330px;
+  }
+  .propstatusdiv {
+    width: 37%;
+  }
+  .chartwrapper{
+    padding-bottom: 2rem;
+  }
+
+ #hotlocations{
+    max-height: 402px !important;
+  }
+}
+.shifft{
+  margin-bottom: 2rem;
+  border: 1px solid rgb(231, 230, 230);
+  padding: 1rem;
+  border-left: none;
+  border-right: none;
+}
+.dam12{
+  border: 1px solid #2e6af0;
+  background: none;
+  margin-left: 2rem;
+  color: #2e6af0;
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: .5rem 2rem;
 }

@@ -16,10 +16,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Dashboard_police</title>
-    <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/animate.css" />
     <script src="../js/dist/Chart.js"></script>
     <script src="../js/index.js"></script>
+    <link rel="stylesheet" href="../css/index.css" />
   </head>
   <body>
     <div>
@@ -352,7 +352,7 @@
                       </label>
                     </div>
                   </div>
-                  <div>
+                  <div class="properds">
                     <label>
                       <span class="rdfrmlbl"> Property Description</span>
                       <textarea
@@ -489,40 +489,45 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <span class="rdfrmlblslt"> Property Bathrooms </span>
-                      <select class="rdseltinpt form-control" required>
-                        <option
-                          value=""
-                          class="rdsltopt"
-                          disabled
-                          selected
-                          hidden
-                        >
-                          --Please select--
-                        </option>
-                      </select>
-                      <div class="text-right">
-                        <img src="../images/caret_down.png" class="drparr" />
-                      </div>
+                  <div class="row shifft">
+                    <div class="col-md-3">
+                      <span class="rdfrmlblslt"> Property Type </span>
+                      <input
+                        type="text"
+                        name="firstname"
+                        size="75"
+                        class="form-control rdsignupinput"
+                      />
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-3">
+                      <span class="rdfrmlblslt"> Property Bedrooms </span>
+                      <input
+                        type="text"
+                        name="firstname"
+                        size="75"
+                        class="form-control rdsignupinput"
+                      />
+                    </div>
+                    <div class="col-md-3">
+                      <span class="rdfrmlblslt"> Property Price </span>
+                      <input
+                        type="text"
+                        name="firstname"
+                        size="75"
+                        class="form-control rdsignupinput"
+                      />
+                    </div>
+                    <div class="col-md-3">
                       <span class="rdfrmlblslt"> Property Bathrooms </span>
-                      <select class="rdseltinpt form-control" required>
-                        <option
-                          value=""
-                          class="rdsltopt"
-                          disabled
-                          selected
-                          hidden
-                        >
-                          --Please select--
-                        </option>
-                      </select>
-                      <div class="text-right">
-                        <img src="../images/caret_down.png" class="drparr" />
-                      </div>
+                      <input
+                        type="text"
+                        name="firstname"
+                        size="75"
+                        class="form-control rdsignupinput"
+                      />
+                    </div>
+                    <div>
+                      <Button class="dam12">Add more</Button>
                     </div>
                   </div>
                   <div class="uploadsctin">
@@ -626,7 +631,8 @@
                   id="hotlocations"
                   class="graphdv"
                   width="600"
-                  height="330px"
+                  height="350px"
+                  style="max-height: 330px"
                 ></canvas>
               </div>
               <div class="propstatusdiv">
@@ -689,8 +695,9 @@
                 <canvas
                   id="propertytype2a"
                   class="graphdv"
-                  width="600"
-                  height="345px"
+                  width="inherit"
+                  height="378px"
+                  max-height="378px"
                 ></canvas>
               </div>
               <div class="budgetrngwrapper">
@@ -711,8 +718,10 @@
                 <canvas
                   id="propertytype"
                   class="graphdv"
-                  width="600"
-                  height="345px"
+                  width="600px"
+                  height="420px"
+                  style="max-height: 420px"
+                  ;
                 ></canvas>
               </div>
             </div>
