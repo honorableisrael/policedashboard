@@ -137,6 +137,7 @@ body {
   margin-right: 16px;
   cursor: pointer;
   padding: 7px 0px;
+  min-width: 156px;
 }
 .serchimg {
   position: relative;
