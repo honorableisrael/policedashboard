@@ -1789,3 +1789,6 @@ table th {
 border-radius: 8px;
 color: #fff;
 }
+#myFileInput {
+  display:none;
+}

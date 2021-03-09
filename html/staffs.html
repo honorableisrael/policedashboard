@@ -157,8 +157,8 @@
             </div>
             <div class="sdncopyr">Copyright 2020, All Rights Reserved</div>
           </div>
-           <!-- sidebar -->
-           <div class="">
+          <!-- sidebar -->
+          <div class="">
             <div
               class="sidebar mobihide animated fadeInLeft"
               id="mobilesideclass"
@@ -293,10 +293,15 @@
                 </div>
               </form>
 
-              <div class="addpropbtn" style="display: block">
+              <div
+                class="addpropbtn"
+                style="display: block"
+                data-toggle="modal"
+                data-target="#adddevmodal"
+              >
                 <!-- <i class="fa fa-plus" aria-hidden="true"></i> -->
                 <img src="../images/Plus.png" alt="img" />
-                Add Property
+                Add Staff
               </div>
             </div>
             <div class="row srchline" style="width: 101%"></div>
@@ -344,7 +349,14 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row" class="staffpos">Business Manager</th>
+                      <th
+                        scope="row"
+                        class="staffpos"
+                        data-target="#editstaffmodal"
+                        data-toggle="modal"
+                      >
+                        Business Manager
+                      </th>
                       <td>Olarenwaju Bolaji</td>
                       <td>ola@test.com</td>
                       <td>+234 70 612 3456</td>
@@ -459,6 +471,188 @@
                   </nav>
                 </div>
                 <!-- pagination -->
+                <!-- modal for adding staffs -->
+                <div class="modal fade" id="adddevmodal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <p class="mdalheader">New Staff</p>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <span class="rdfrmlblslt"> First Name </span>
+                          <input
+                            type="text"
+                            name="firstname"
+                            size="75"
+                            class="form-control rdsignupinput"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <span class="rdfrmlblslt"> Last Name </span>
+                          <input
+                            type="text"
+                            name="firstname"
+                            size="75"
+                            class="form-control rdsignupinput"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <label>
+                            <span class="rdfrmlbl">Email</span>
+                            <input
+                              type="text"
+                              name="firstname"
+                              size="75"
+                              class="form-control rdsignupinput"
+                            />
+                          </label>
+                        </div>
+                        <div class="col-md-12">
+                          <label>
+                            <span class="rdfrmlbl">Phone Number</span>
+                            <input
+                              type="text"
+                              name="firstname"
+                              size="75"
+                              class="form-control rdsignupinput"
+                            />
+                          </label>
+                        </div>
+                        <div class="col-md-12">
+                          <label>
+                            <span class="rdfrmlbl">RC Number</span>
+                            <input
+                              type="text"
+                              name="firstname"
+                              size="75"
+                              class="form-control rdsignupinput"
+                            />
+                          </label>
+                        </div>
+                        <div class="col-md-12">
+                          <span class="rdfrmlblslt"> Role</span>
+                          <select
+                            onChange="{formActionHandler}"
+                            class="rdseltinpt form-control"
+                            required
+                          >
+                            <option
+                              value=""
+                              class="rdsltopt"
+                              disabled
+                              selected
+                              hidden
+                            >
+                              --Please select--
+                            </option>
+                          </select>
+                          <div class="text-right">
+                            <img
+                              src="../images/caret_down.png"
+                              class="drparr"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <br />
+                      <div class="mdbtnwrapper">
+                        <span class="addpropbtn modaladdbtn"> Add Staff</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of modal section -->
+                <!-- modal for editing staffs -->
+                <div class="modal fade" id="editstaffmodal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <p class="mdalheader">Update Staff Information</p>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <span class="rdfrmlblslt"> First Name </span>
+                          <input
+                            type="text"
+                            name="firstname"
+                            size="75"
+                            class="form-control rdsignupinput"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <span class="rdfrmlblslt"> Last Name </span>
+                          <input
+                            type="text"
+                            name="firstname"
+                            size="75"
+                            class="form-control rdsignupinput"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <label>
+                            <span class="rdfrmlbl">Email</span>
+                            <input
+                              type="text"
+                              name="firstname"
+                              size="75"
+                              class="form-control rdsignupinput"
+                            />
+                          </label>
+                        </div>
+                        <div class="col-md-12">
+                          <label>
+                            <span class="rdfrmlbl">Phone Number</span>
+                            <input
+                              type="text"
+                              name="firstname"
+                              size="75"
+                              class="form-control rdsignupinput"
+                            />
+                          </label>
+                        </div>
+                        <div class="col-md-12">
+                          <label>
+                            <span class="rdfrmlbl">RC Number</span>
+                            <input
+                              type="text"
+                              name="firstname"
+                              size="75"
+                              class="form-control rdsignupinput"
+                            />
+                          </label>
+                        </div>
+                        <div class="col-md-12">
+                          <span class="rdfrmlblslt"> Role</span>
+                          <select
+                            onChange="{formActionHandler}"
+                            class="rdseltinpt form-control"
+                            required
+                          >
+                            <option
+                              value=""
+                              class="rdsltopt"
+                              disabled
+                              selected
+                              hidden
+                            >
+                              --Please select--
+                            </option>
+                          </select>
+                          <div class="text-right">
+                            <img
+                              src="../images/caret_down.png"
+                              class="drparr"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <br />
+                      <div class="mdbtnwrapper">
+                        <span class="addpropbtn modaladdbtn">
+                          Update Staff</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of modal section -->
               </div>
             </div>
           </div>
