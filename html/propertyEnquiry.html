@@ -154,8 +154,8 @@
             </div>
             <div class="sdncopyr">Copyright 2020, All Rights Reserved</div>
           </div>
-           <!-- sidebar -->
-           <div class="">
+          <!-- sidebar -->
+          <div class="">
             <div
               class="sidebar mobihide animated fadeInLeft"
               id="mobilesideclass"
@@ -317,6 +317,290 @@
                 <img src="../images/burger-img.png" />
               </div>
             </div>
+            <!-- modal for editing starts here -->
+            <!-- modal section -->
+            <div class="modal fade" id="editpropmodal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <p class="mdalheader">Update this Property</p>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <span class="rdfrmlblslt"> Property Developer </span>
+                      <select
+                        onChange="{formActionHandler}"
+                        class="rdseltinpt form-control"
+                        required
+                      >
+                        <option
+                          value=""
+                          class="rdsltopt"
+                          disabled
+                          selected
+                          hidden
+                        >
+                          --Please select--
+                        </option>
+                      </select>
+                      <div class="text-right">
+                        <img src="../images/caret_down.png" class="drparr" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label>
+                        <span class="rdfrmlbl"> Property Name</span>
+                        <input
+                          type="text"
+                          name="firstname"
+                          size="75"
+                          class="form-control rdsignupinput"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="properds">
+                    <label>
+                      <span class="rdfrmlbl"> Property Description</span>
+                      <textarea
+                        class="form-control modaltxtareafld"
+                        cols="63"
+                        rows="5"
+                      >
+                      </textarea>
+                    </label>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <span class="rdfrmlblslt"> Development Status </span>
+                      <select class="rdseltinpt form-control" required>
+                        <option
+                          value=""
+                          class="rdsltopt"
+                          disabled
+                          selected
+                          hidden
+                        >
+                          --Please select--
+                        </option>
+                      </select>
+                      <div class="text-right">
+                        <img src="../images/caret_down.png" class="drparr" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label>
+                        <span class="rdfrmlbl"> Development Value</span>
+                        <input
+                          type="text"
+                          name="firstname"
+                          size="75"
+                          class="form-control rdsignupinput"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>
+                        <span class="rdfrmlbl">Property Price</span>
+                        <input
+                          type="text"
+                          name="firstname"
+                          size="75"
+                          class="form-control rdsignupinput"
+                        />
+                      </label>
+                    </div>
+                    <div class="col-md-6">
+                      <span class="rdfrmlblslt"> Finance Option </span>
+                      <select class="rdseltinpt form-control" required>
+                        <option
+                          value=""
+                          class="rdsltopt"
+                          disabled
+                          selected
+                          hidden
+                        >
+                          --Please select--
+                        </option>
+                      </select>
+                      <div class="text-right">
+                        <img src="../images/caret_down.png" class="drparr" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>
+                        <span class="rdfrmlbl"> Property Situated</span>
+                        <input
+                          type="text"
+                          name="firstname"
+                          size="75"
+                          class="form-control rdsignupinput"
+                        />
+                      </label>
+                    </div>
+                    <div class="col-md-6">
+                      <span class="rdfrmlblslt"> Property City </span>
+                      <select class="rdseltinpt form-control" required>
+                        <option
+                          value=""
+                          class="rdsltopt"
+                          disabled
+                          selected
+                          hidden
+                        >
+                          --Please select--
+                        </option>
+                      </select>
+                      <div class="text-right">
+                        <img src="../images/caret_down.png" class="drparr" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <span class="rdfrmlblslt"> Address </span>
+                      <select class="rdseltinpt form-control" required>
+                        <option
+                          value=""
+                          class="rdsltopt"
+                          disabled
+                          selected
+                          hidden
+                        >
+                          --Please select--
+                        </option>
+                      </select>
+                      <div class="text-right">
+                        <img src="../images/caret_down.png" class="drparr" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <span class="rdfrmlblslt"> Amenities </span>
+                      <select class="rdseltinpt form-control" required>
+                        <option
+                          value=""
+                          class="rdsltopt"
+                          disabled
+                          selected
+                          hidden
+                        >
+                          --Please select--
+                        </option>
+                      </select>
+                      <div class="text-right">
+                        <img src="../images/caret_down.png" class="drparr" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row shifft">
+                    <div class="col-md-3">
+                      <span class="rdfrmlblslt"> Property Type </span>
+                      <input
+                        type="text"
+                        name="firstname"
+                        size="75"
+                        class="form-control rdsignupinput"
+                      />
+                    </div>
+                    <div class="col-md-3">
+                      <span class="rdfrmlblslt"> Property Bedrooms </span>
+                      <input
+                        type="text"
+                        name="firstname"
+                        size="75"
+                        class="form-control rdsignupinput"
+                      />
+                    </div>
+                    <div class="col-md-3">
+                      <span class="rdfrmlblslt"> Property Price </span>
+                      <input
+                        type="text"
+                        name="firstname"
+                        size="75"
+                        class="form-control rdsignupinput"
+                      />
+                    </div>
+                    <div class="col-md-3">
+                      <span class="rdfrmlblslt"> Property Bathrooms </span>
+                      <input
+                        type="text"
+                        name="firstname"
+                        size="75"
+                        class="form-control rdsignupinput"
+                      />
+                    </div>
+                    <div class="text-right1d">
+                      <button class="dam12">Add more +</button>
+                      <button class="dam12 red1">Remove -</button>
+                    </div>
+                  </div>
+                  <div class="uploadsctin">
+                    <div class="flexcla1">
+                      <div class="imagecontanin">
+                        <img
+                          src="../images/selectedimages.png"
+                          class="slectedimgs"
+                        />
+                        <div class="cuag">
+                          <button class="dam12 bld22">Change</button>
+                          <button class="dam12 bld221">Delete</button>
+                        </div>
+                      </div>
+                      <div class="imagecontanin">
+                        <img
+                          src="../images/selectedimages.png"
+                          class="slectedimgs"
+                        />
+                        <div class="cuag">
+                          <button class="dam12 bld22">Change</button>
+                          <button class="dam12 bld221">Delete</button>
+                        </div>
+                      </div>
+                      <div class="imagecontanin">
+                        <img
+                          src="../images/selectedimages.png"
+                          class="slectedimgs"
+                        />
+                        <div class="cuag">
+                          <button class="dam12 bld22">Change</button>
+                          <button class="dam12 bld221">Delete</button>
+                        </div>
+                      </div>
+                      <div class="imagecontanin">
+                        <img
+                          src="../images/selectedimages.png"
+                          class="slectedimgs"
+                        />
+                        <div class="cuag">
+                          <button class="dam12 bld22">Change</button>
+                          <button class="dam12 bld221">Delete</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="addnewimag">
+                      <button class="addnwimgs">
+                       + Add images
+                      </button>
+                    </div>
+                    <!-- <span class="uploadbtn"
+                      ><img src="../images/Upload.png" /> Upload Images</span
+                    >
+                    <p>
+                      we accept jpegs, png, jpg, pdf and gif. Each file must not
+                      be more that 2Mb
+                    </p> -->
+                  </div>
+                  <div class="mdbtnwrapper">
+                    <span class="addpropbtn modaladdbtn">
+                      Update this Property</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of modal section -->
             <div class="container-fluid">
               <div class="table-responsive">
                 <table class="table" id="agent">
@@ -342,7 +626,9 @@
                   <tbody>
                     <tr>
                       <th scope="row">1</th>
-                      <td>bosun@gmail.com</td>
+                      <td data-toggle="modal" data-target="#editpropmodal">
+                        bosun@gmail.com
+                      </td>
                       <td>Olatubosun Michaels</td>
                       <td>+2347060936145</td>
                       <td>BUNGALOW</td>
