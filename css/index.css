@@ -637,6 +637,7 @@ button:focus {
     padding-top: 18px;
     align-items: baseline;
     justify-content: space-between;
+    padding-right: 1rem;
   }
   .sidenav {
     display: none;
@@ -860,7 +861,7 @@ button:focus {
 .pietext {
   font-weight: bold;
   font-size: 23px;
-  line-height: 27px;
+  line-height: 33px;
   text-align: center;
   color: #000000;
   position: absolute;
@@ -1654,6 +1655,7 @@ table th {
   .mobchrtwrapper {
     width: 60%;
   }
+
   .piechartdv {
     width: 100%;
     height: 83%;
@@ -1672,6 +1674,7 @@ table th {
   .budgetrngcontent {
     height: 87% !important;
   }
+
 }
 #addpropmodal .modal-dialog {
   width: 66%;
@@ -1799,8 +1802,24 @@ color: #fff;
 #myFileInput {
   display:none;
 }
+
+@media(max-width:1300px){
+  .cards{
+    max-width: 230px;
+    margin-bottom: 2rem;
+  }
+  .officerstatuscntner{
+    justify-content: inherit;
+  }
+}
 @media(max-width:500px){
   .card-blue{
     margin-right: 2rem;
   }
+  .officerstatuscntner{
+    justify-content: center;
+  }
+}
+.colorblud{
+  color: #2e6af0 !important;
 }
