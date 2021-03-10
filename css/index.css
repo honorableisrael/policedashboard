@@ -630,14 +630,27 @@ button:focus {
   /* min-height: 375px;
   max-height: 375px; */
 }
+
+@media (max-width: 850px) {
+  .mobileserchwrapper {
+    display: flex;
+    padding-top: 18px;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .sidenav {
+    display: none;
+  }
+  .dashbord-main {
+    max-width: 100%;
+  }
+}
 /* mobile responsiveness */
 @media (max-width: 760px) {
   .dashbord-main {
     max-width: 100% !important;
   }
-  .sidenav {
-    display: none;
-  }
+
   .officerstatuscntner {
     /* display: none; */
   }
@@ -656,12 +669,7 @@ button:focus {
   .mobilsdnavdvder {
     border: 1px solid #bbbbbb8e;
   }
-  .mobileserchwrapper {
-    display: flex;
-    padding-top: 18px;
-    align-items: baseline;
-    justify-content: space-between;
-  }
+
   .mobchrtwrapper {
     width: 100% !important;
   }
@@ -745,9 +753,7 @@ button:focus {
   .budgetrngwrapper {
     width: 100%;
   }
-  .dashbord-main {
-    max-width: 65%;
-  }
+
   .sidenav {
     min-width: 35%;
   }
@@ -1371,6 +1377,7 @@ table th {
     margin-bottom: 0.4rem;
     padding-left: 0px;
   }
+
 }
 .datefilter {
   margin-right: 1rem;
@@ -1791,4 +1798,9 @@ color: #fff;
 }
 #myFileInput {
   display:none;
+}
+@media(max-width:500px){
+  .card-blue{
+    margin-right: 2rem;
+  }
 }

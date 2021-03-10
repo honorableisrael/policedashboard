@@ -407,6 +407,56 @@
                                 </nav>
                             </div>
                   <!-- pagination -->
+                     <!-- modal for roles -->
+                <div class="modal fade" id="editstaffmodal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <p class="mdalheader">New Role</p>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <span class="rdfrmlblslt"> Role Name </span>
+                          <input
+                            type="text"
+                            name="firstname"
+                            size="75"
+                            class="form-control rdsignupinput"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <span class="rdfrmlblslt"> Role</span>
+                          <select
+                            onChange="{formActionHandler}"
+                            class="rdseltinpt form-control"
+                            required
+                          >
+                            <option
+                              value=""
+                              class="rdsltopt"
+                              disabled
+                              selected
+                              hidden
+                            >
+                              --Please select--
+                            </option>
+                          </select>
+                          <div class="text-right">
+                            <img
+                              src="../images/caret_down.png"
+                              class="drparr"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <br />
+                      <div class="mdbtnwrapper">
+                        <span class="addpropbtn modaladdbtn">
+                          Add Role</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of modal section -->
                         </div>
                     </div>
                 </div>
