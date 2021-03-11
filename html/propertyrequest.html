@@ -24,40 +24,40 @@
         <div class="row">
           <div class="col-md-3 sidenav">
             <div class="sdnpddeddv">
-                <div class="logosectionwrapp">
-                    <div class="logo-section">
-                      <div class="logosectionimg">
-                        <img src="../images/gs-logo.png" />
-                      </div>
-                      <div class="logosctncontent">
-                        <div
-                          class="cmpnynmedv"
-                          data-toggle="collapse"
-                          data-target="#collapseExample"
-                          aria-expanded="false"
-                          aria-controls="collapseExample"
-                        >
-                          <h1>NPFPDCC</h1>
-                          <div>
-                            <img src="../images/arrow-down.png" alt="arr" />
-                          </div>
-                        </div>
-                        <p>Gloria Sunday - Admin</p>
-                      </div>
-                    </div>
-                    <div class="collapse acc11" id="collapseExample">
-                      <div class="topiconwrapper">
-                        <img src="../images/Edit.png" class="topicon" /><span
-                          class="textt1"
-                          >Edit Profile</span
-                        >
-                      </div>
-                      <div class="topiconwrapper color-logout">
-                        <img src="../images/Logout.png" class="topicon" />
-                        <span class="textt1"> Log Out</span>
-                      </div>
-                    </div>
+              <div class="logosectionwrapp">
+                <div class="logo-section">
+                  <div class="logosectionimg">
+                    <img src="../images/gs-logo.png" />
                   </div>
+                  <div class="logosctncontent">
+                    <div
+                      class="cmpnynmedv"
+                      data-toggle="collapse"
+                      data-target="#collapseExample"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      <h1>NPFPDCC</h1>
+                      <div>
+                        <img src="../images/arrow-down.png" alt="arr" />
+                      </div>
+                    </div>
+                    <p>Gloria Sunday - Admin</p>
+                  </div>
+                </div>
+                <div class="collapse acc11" id="collapseExample">
+                  <div class="topiconwrapper">
+                    <img src="../images/Edit.png" class="topicon" /><span
+                      class="textt1"
+                      >Edit Profile</span
+                    >
+                  </div>
+                  <div class="topiconwrapper color-logout">
+                    <img src="../images/Logout.png" class="topicon" />
+                    <span class="textt1"> Log Out</span>
+                  </div>
+                </div>
+              </div>
               <div class="sidenavlinkscontainer">
                 <a href="./index.html">
                   <div class="sidenavlinks dashbord">
@@ -154,8 +154,8 @@
             </div>
             <div class="sdncopyr">Copyright 2020, All Rights Reserved</div>
           </div>
-           <!-- sidebar -->
-           <div class="">
+          <!-- sidebar -->
+          <div class="">
             <div
               class="sidebar mobihide animated fadeInLeft"
               id="mobilesideclass"
@@ -323,10 +323,17 @@
                   <div class="tableheadingdiv flexhead">
                     <p class="tableheading">Property Requests</p>
                     <div class="inppt">
-                        <input type="date" class="datefilter form-control" />
-                        <span class="datesep"></span>
-                        <input type="date" class="datefilter1 form-control" />
+                      <div class="propfilter1">
+                        <select class="form-control propfilter" name="" id="">
+                          <option value="">Property Type</option>
+                          <option value="">Estate</option>
+                          <option value="">Terrace</option>
+                        </select>
                       </div>
+                      <input type="date" class="datefilter form-control" />
+                      <span class="datesep"></span>
+                      <input type="date" class="datefilter1 form-control" />
+                    </div>
                   </div>
                   <thead class="regtableheadrow">
                     <tr class="regtableheadrow">
@@ -507,7 +514,11 @@
       });
     </script>
     <script src="../bootstrap/jquery.min.js.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <script src="../js/index.js"></script>
   </body>
 </html>
