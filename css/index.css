@@ -1378,7 +1378,6 @@ table th {
     margin-bottom: 0.4rem;
     padding-left: 0px;
   }
-
 }
 .datefilter {
   margin-right: 1rem;
@@ -1463,8 +1462,10 @@ table th {
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #32335a;
+@media (max-width: 600px) {
+  ::-webkit-scrollbar-thumb:hover {
+    background: #32335a;
+  }
 }
 .msgsub {
   font-weight: 325;
@@ -1674,7 +1675,6 @@ table th {
   .budgetrngcontent {
     height: 87% !important;
   }
-
 }
 #addpropmodal .modal-dialog {
   width: 66%;
@@ -1788,38 +1788,110 @@ table th {
   border-color: #ff523d;
   font-weight: 800;
 }
-.addnewimag{
+.addnewimag {
   text-align: right;
 }
-.addnwimgs{
-  padding: .3rem 1rem;
+.addnwimgs {
+  padding: 0.3rem 1rem;
   background: white;
   border: none;
   background: #999999;
-border-radius: 8px;
-color: #fff;
+  border-radius: 8px;
+  color: #fff;
 }
 #myFileInput {
-  display:none;
+  display: none;
 }
 
-@media(max-width:1300px){
-  .cards{
+@media (max-width: 1300px) {
+  .cards {
     max-width: 230px;
     margin-bottom: 2rem;
   }
-  .officerstatuscntner{
+  .officerstatuscntner {
     justify-content: inherit;
   }
 }
-@media(max-width:500px){
-  .card-blue{
+@media (max-width: 500px) {
+  .card-blue {
     margin-right: 2rem;
   }
-  .officerstatuscntner{
+  .officerstatuscntner {
     justify-content: center;
   }
 }
-.colorblud{
+.colorblud {
   color: #2e6af0 !important;
 }
+/* dropdown css */
+.three-dots:after {
+  cursor: pointer;
+  color: #666666;
+  content: "\2807";
+  font-size: 20px;
+  padding: 0 5px;
+}
+a,
+a:hover {
+  text-decoration: none !important;
+}
+/* a {
+  text-decoration: none;
+  color: white;
+} */
+
+a div {
+  padding: 1rem;
+}
+
+.dropdown {
+  position: absolute;
+  right: 10px;
+  background: #ffffff;
+  border: 1px solid rgba(46, 106, 240, 0.1);
+  box-sizing: border-box;
+  border-radius: 8px;
+  outline: none;
+  opacity: 0;
+  z-index: -1;
+  max-height: 0;
+  width: 150px;
+  padding: 0.1rem;
+}
+.dropdown a {
+  cursor: pointer;
+}
+.deletee {
+  width: 15px;
+}
+.dropdown-container:focus {
+  outline: none;
+}
+
+.dropdown-container:focus .dropdown {
+  opacity: 1;
+  z-index: 100;
+  max-height: 100vh;
+}
+.shiftleft1 {
+  position: relative;
+  right: .1rem;
+}
+.flexrig1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.deletee {
+  margin-right: 1rem;
+}
+.grrn {
+  color: #0fbc49;
+}
+.redd2 {
+  color: #eb5757;
+}
+.dropdown-container {
+  font-weight: 500;
+}
+/* dropdown css */
