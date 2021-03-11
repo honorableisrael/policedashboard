@@ -136,7 +136,7 @@
                             </div>
                             <div class="sidenav-titiles">Users</div>
                             <a href="./roles.html">
-                                <div class="sidenavlinks managesaleslist">
+                                <div class="sidenavlinks managesaleslist colorblud">
 
                                     <img src="../images/2User.png" alt="logo" />
                                     Roles
@@ -261,7 +261,7 @@
                       Generate Report
                     </div>
                     <div class="sidenav-titiles">Users</div>
-                    <div class="sidenavlinks managesaleslist">
+                    <div class="sidenavlinks managesaleslist colorblud">
                       <img src="../images/2User.png" alt="logo" />
                       Roles
                     </div>
@@ -296,7 +296,7 @@
                         <div class="addpropbtn" style="display: none;">
                             <!-- <i class="fa fa-plus" aria-hidden="true"></i> -->
                             <img src="../images/Plus.png" alt="img" />
-                            Add Property
+                            Add Role
                         </div>
                     </div>
                     <div class="row srchline" style="width: 101%;"></div>
@@ -316,10 +316,10 @@
                             <table class="table" id="mytable">
                                 <div class="tableheadingdiv">
                                     <p class="tableheading">All Roles</p>
-                                    <div class="addpropbtn rolebtn" >
+                                    <div class="addpropbtn rolebtn" data-target="#editrolemodal" data-toggle="modal">
                                             <!-- <i class="fa fa-plus" aria-hidden="true"></i> -->
                                             <img src="../images/bluePlus.png" alt="img" />
-                                            Add Property
+                                            Add Role
                                         </div>
                                 </div>
                                 <thead class="regtableheadrow">
@@ -408,7 +408,7 @@
                             </div>
                   <!-- pagination -->
                      <!-- modal for roles -->
-                <div class="modal fade" id="editstaffmodal">
+                <div class="modal fade" id="editrolemodal">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <p class="mdalheader">New Role</p>
@@ -422,28 +422,48 @@
                             class="form-control rdsignupinput"
                           />
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12"      
+                        >
                           <span class="rdfrmlblslt"> Role</span>
-                          <select
-                            onChange="{formActionHandler}"
-                            class="rdseltinpt form-control"
-                            required
-                          >
-                            <option
-                              value=""
-                              class="rdsltopt"
-                              disabled
-                              selected
-                              hidden
+                            <div
+                              class="rdsltopt form-control rdsltoptw"
+                              data-toggle="collapse"
+                              data-target="#collapseExamplea"
+                              aria-expanded="false"
+                              aria-controls="collapseExamplea"
                             >
                               --Please select--
-                            </option>
-                          </select>
-                          <div class="text-right">
+                          </div>
+                          <div class="text-right fftop"
+                          data-toggle="collapse"
+                          data-target="#collapseExamplea"
+                          aria-expanded="false"
+                          aria-controls="collapseExamplea"
+                          >
                             <img
                               src="../images/caret_down.png"
                               class="drparr"
                             />
+                          </div>
+                          <div id="collapseExamplea" class="collapse">
+                            <div class="checklist1">
+                              <label class="custcontainer">
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label> 
+                            <span class="adjst12">
+                              Manage Users
+                            </span>
+                          </div>
+                          <div class="checklist1">
+                            <label class="custcontainer">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label> 
+                          <span class="adjst12">
+                            View-Users
+                          </span>
+                        </div>
                           </div>
                         </div>
                       </div>
