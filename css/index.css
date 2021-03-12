@@ -1433,8 +1433,8 @@ table th {
   display: flex;
   justify-content: center;
 }
-.topicon{
-  object-fit: scale-down ;
+.topicon {
+  object-fit: scale-down;
 }
 .color-logout {
   color: #ff523d;
@@ -1655,6 +1655,11 @@ table th {
   margin-bottom: 54px;
   width: 95%;
 }
+@media (max-width: 1300px) {
+  .piechartdv {
+    margin-left: 1rem;
+  }
+}
 @media (min-width: 1300px) {
   .mobchrtwrapper {
     width: 60%;
@@ -1679,6 +1684,7 @@ table th {
     height: 87% !important;
   }
 }
+
 #addpropmodal .modal-dialog {
   width: 66%;
   max-width: 66%;
@@ -1989,17 +1995,18 @@ a div {
   color: #2e6af0;
   font-size: 12px;
 }
-.propfilter{
+.propfilter {
   width: 190px;
-    font-size: 13px;
-    margin-right: .7rem;
+  font-size: 13px;
+  margin-right: 0.7rem;
 }
-.seel{
+.seel {
   font-size: 12px;
 }
-@media(max-width:600px){
-  .propfilter,.propfilter1{
-    margin-bottom: .2rem;
+@media (max-width: 600px) {
+  .propfilter,
+  .propfilter1 {
+    margin-bottom: 0.2rem;
     margin-right: 1rem;
     width: 100% !important;
   }
