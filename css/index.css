@@ -166,12 +166,13 @@ body {
 .cards {
   display: flex;
   background-color: #ffffff;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 11px 12px;
   min-width: 202px;
   min-height: 97px;
   align-items: center;
   margin-bottom: 0.4rem;
+  color: #666666 !important;
 }
 .cards p {
   margin-bottom: 0px;
