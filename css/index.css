@@ -133,11 +133,12 @@ body {
   background-color: #2e6af0;
   color: #ffffff;
   font-size: 14px;
-  border-radius: 5px;
+  border-radius: 8px;
   margin-right: 16px;
   cursor: pointer;
   padding: 7px 0px;
   min-width: 156px;
+  font-weight: 600;
 }
 .serchimg {
   position: relative;
