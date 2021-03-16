@@ -483,7 +483,8 @@ button:focus {
   border-radius: 12px;
   border: none;
   font-size: 15px;
-  padding: 1.7rem 1rem;
+  padding: 0rem 1rem;
+  height: 55px;
 }
 .submitt1 {
   color: #fff;
@@ -2021,4 +2022,10 @@ a div {
     margin-right: 1rem;
     width: 100% !important;
   }
+}
+.rdsltopt{
+    padding: 1rem !important;
+}
+input{
+  line-height: 0 !important;
 }
