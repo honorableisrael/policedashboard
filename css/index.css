@@ -27,9 +27,7 @@
 body {
   font-family: "GothamBook" !important;
 }
-.form-control{
-  font-family: "Gotham-Medium";
-}
+
 .sidenav {
   background-color: #f0f5ff;
 }
@@ -2031,4 +2029,7 @@ a div {
 }
 input{
   line-height: 0 !important;
+}
+.form-control{
+  font-family: "GothamBook","cursive" !important;
 }
