@@ -365,7 +365,7 @@ body {
   font-size: 14px;
   color: #666666;
 }
-.sidenavlinks:hover{
+.sidenavlinks:hover {
   color: #2196f3;
 }
 .dashbord {
@@ -557,7 +557,7 @@ button:focus {
   .datefilter1 {
     margin-right: 0.7rem;
   }
-  .piechartdv{
+  .piechartdv {
     min-width: 300px;
   }
 }
@@ -878,13 +878,17 @@ button:focus {
   text-align: center;
   color: #000000;
   position: absolute;
-  /* top: 7.3rem;    */
+  height: 75px;
+  margin: auto;
 }
 .cmet {
   position: relative;
-  top: 1.49rem;
   left: 1.1rem;
   font-weight: 900;
+  margin: auto;
+  height: 64px;
+  display: flex;
+  align-items: center;
 }
 /* registerd officers page styling */
 .tableheadingdiv {
@@ -916,7 +920,7 @@ table th {
   font-size: 14px;
   color: #333333;
 }
-tr:hover{
+tr:hover {
   background-color: #e9f2e9;
 }
 .bckcolorfade {
@@ -2027,12 +2031,12 @@ a div {
     width: 100% !important;
   }
 }
-.rdsltopt{
-    padding: 1rem !important;
+.rdsltopt {
+  padding: 1rem !important;
 }
-input{
+input {
   line-height: 0 !important;
 }
-.form-control{
+.form-control {
   font-family: "cursive" !important;
 }
