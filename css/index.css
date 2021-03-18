@@ -1905,6 +1905,7 @@ a div {
 .shiftleft1 {
   position: relative;
   right: 0.1rem;
+  z-index: 100;
 }
 .flexrig1 {
   display: flex;
@@ -2034,9 +2035,9 @@ a div {
 .rdsltopt {
   padding: 1rem !important;
 }
-input {
-  line-height: 0 !important;
-}
 .form-control {
   font-family: "cursive" !important;
+}
+a{
+  color: inherit;
 }
