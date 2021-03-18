@@ -557,6 +557,9 @@ button:focus {
   .datefilter1 {
     margin-right: 0.7rem;
   }
+  .piechartdv{
+    min-width: 300px;
+  }
 }
 .rmem2 {
   padding-left: 5rem;
