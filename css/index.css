@@ -108,6 +108,7 @@ body {
 .dashbord-main {
   background-color: #f9f9f9;
   padding: 0px 13px;
+  min-height: 70vh;
 }
 .dshboadsearchbar {
   border: none;
@@ -2164,4 +2165,7 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+.pannel{
+  padding: 2rem 4rem;
 }
