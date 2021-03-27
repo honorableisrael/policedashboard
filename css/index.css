@@ -2182,7 +2182,7 @@ img {vertical-align: middle;}
   border: 2px solid #f3f6fc;
   margin: auto;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 .pesnalinfowrapper{
   display: flex;
