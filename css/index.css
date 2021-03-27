@@ -2169,3 +2169,74 @@ img {vertical-align: middle;}
 .pannel{
   padding: 2rem 4rem;
 }
+.Apllictn-heading{
+  text-align: center;
+  padding: 15px 0px 30px 0px;
+  font-weight: 700;
+}
+.appimage{
+  height: 180px;
+  width: 144px;
+  background-color: #f2f6fc;
+  border-radius: 8px;
+  border: 2px solid #f3f6fc;
+}
+.pesnalinfowrapper{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 35px;
+}
+.pinfodiv{
+ border: 1px solid #f7f7f7;
+ width: 80%;
+ margin-top: 14px;
+ border-radius: 9px;
+}
+.personalinfocontent{
+  display: flex;
+  justify-content: space-around;
+  width: 88%;
+}
+.infospn{
+  position: relative;
+  display: inline-block;
+  font-size: 11px;
+  top: -15px;
+  right: -36px;
+  color: #333;
+  background-color: #f2f6fc;
+  padding: 4px 13px;
+  border-radius: 8px;
+}
+.appcntnttitle{
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.cntntdetails{
+  font-size: 13px;
+}
+.contactinfo{
+  width: 97%;
+  margin: auto;
+  margin-bottom: 35px;
+}
+.contactcntent{
+  width: 90%;
+}
+.cntspan{
+  right: -46px;
+}
+.contactdetais{
+  margin-bottom: 23px;
+}
+.estimatmntlincdv{
+  padding-left: 52px;
+}
+.appbtn{
+padding: 11px;
+display: inline-block;
+width: 15%;
+margin-top: 28px;
+font-weight: 700;
+}
