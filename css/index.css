@@ -2175,7 +2175,7 @@ img {vertical-align: middle;}
   font-weight: 700;
 }
 .personalinfocontent div{
-  width: 120px;
+  min-width: 120px;
 }
 .appimage{
   height: 180px;
