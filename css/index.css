@@ -2180,6 +2180,9 @@ img {vertical-align: middle;}
   background-color: #f2f6fc;
   border-radius: 8px;
   border: 2px solid #f3f6fc;
+  margin: auto;
+  display: flex;
+  align-items: center;
 }
 .pesnalinfowrapper{
   display: flex;
