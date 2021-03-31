@@ -20,6 +20,10 @@
     <script src="../js/dist/Chart.js"></script>
     <script src="../js/index.js"></script>
     <link rel="stylesheet" href="../css/index.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+    rel="stylesheet"
+  />
   </head>
   <body>
     <div>
@@ -483,7 +487,23 @@
                     </div>
                     <div class="col-md-6">
                       <span class="rdfrmlblslt"> Amenities </span>
-                      <select class="rdseltinpt form-control" required>
+                      <div class="multiselect">
+                        <div class="selectBox" onclick="showCheckboxes()">
+                          <select>
+                            <option></option>
+                          </select>
+                          <div class="overSelect"></div>
+                        </div>
+                        <div id="checkboxes">
+                          <label for="one">
+                            <input type="checkbox" id="one" />First checkbox</label>
+                          <label for="two">
+                            <input type="checkbox" id="two" />Second checkbox</label>
+                          <label for="three">
+                            <input type="checkbox" id="three" />Third checkbox</label>
+                        </div>
+                      </div>
+                      <!-- <select class="rdseltinpt form-control" required>
                         <option
                           value=""
                           class="rdsltopt"
@@ -493,10 +513,10 @@
                         >
                           --Please select--
                         </option>
-                      </select>
-                      <div class="text-right">
+                      </select> -->
+                      <!-- <div class="text-right">
                         <img src="../images/caret_down.png" class="drparr" />
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                   <div class="row shifft">
@@ -560,70 +580,70 @@
             <!-- end of modal section -->
 
             <div class="officerstatuscntner" onclick="hidesidenav()">
-                <div class="cards card-green">
-                  <div class="officerstatuslogo">
-                    <a href="./registeredofficers.html" class="nocssattribute">
+              <div class="cards card-green">
+                <div class="officerstatuslogo">
+                  <a href="./registeredofficers.html" class="nocssattribute">
                     <img src="../images/green-avatar.png" alt="pic" />
-                    </a>
-                  </div>
-                  <div>
-                    <a href="./registeredofficers.html" class="nocssattribute">
+                  </a>
+                </div>
+                <div>
+                  <a href="./registeredofficers.html" class="nocssattribute">
                     <p class="numbofofficers number-green">70</p>
                     <p class="regstdoffcers">Registered Officers</p>
-                    </a>
-                  </div>
+                  </a>
                 </div>
-                <div class="cards card-red">
-                  <div class="officerstatuslogo">
-                    <a href="./registeredofficers.html" class="nocssattribute">
+              </div>
+              <div class="cards card-red">
+                <div class="officerstatuslogo">
+                  <a href="./registeredofficers.html" class="nocssattribute">
                     <img src="../images/heart.png" alt="pic" />
-                    </a>
-                  </div>
-                  <div>
-                    <a href="./registeredofficers.html" class="nocssattribute">
+                  </a>
+                </div>
+                <div>
+                  <a href="./registeredofficers.html" class="nocssattribute">
                     <p class="numbofofficers number-red">32</p>
                     <p class="regstdoffcers">Interested</p>
-                    </a>
-                  </div>
+                  </a>
                 </div>
-                <div class="cards card-purple">
-                  <div class="officerstatuslogo">
-                    <a href="./registeredofficers.html" class="nocssattribute">
+              </div>
+              <div class="cards card-purple">
+                <div class="officerstatuslogo">
+                  <a href="./registeredofficers.html" class="nocssattribute">
                     <img src="../images/mark.png" alt="pic" />
-                    </a>
-                  </div>
-                  <div>
-                    <a href="./registeredofficers.html" class="nocssattribute">
+                  </a>
+                </div>
+                <div>
+                  <a href="./registeredofficers.html" class="nocssattribute">
                     <p class="numbofofficers number-purple">70</p>
                     <p class="regstdoffcers">Qualified</p>
-                    </a>
-                  </div>
+                  </a>
                 </div>
-                <div class="cards card-blue">
-                  <div class="officerstatuslogo">
-                    <a href="./registeredofficers.html" class="nocssattribute">
+              </div>
+              <div class="cards card-blue">
+                <div class="officerstatuslogo">
+                  <a href="./registeredofficers.html" class="nocssattribute">
                     <img src="../images/star.png" alt="pic" />
-                    </a>
-                  </div>
-                  <div>
-                    <a href="./registeredofficers.html" class="nocssattribute">
+                  </a>
+                </div>
+                <div>
+                  <a href="./registeredofficers.html" class="nocssattribute">
                     <p class="numbofofficers number-blue">70</p>
                     <p class="regstdoffcers">Hot Locations</p>
-                    </a>
-                  </div>
+                  </a>
                 </div>
+              </div>
             </div>
             <div class="mobilecardcarousel">
               <div class="cards card-green">
                 <div class="officerstatuslogo">
                   <a href="./registeredofficers.html" class="nocssattribute">
-                  <img src="../images/green-avatar.png" alt="pic" />
+                    <img src="../images/green-avatar.png" alt="pic" />
                   </a>
                 </div>
                 <div>
                   <a href="./registeredofficers.html" class="nocssattribute">
-                  <p class="numbofofficers number-green">70</p>
-                  <p class="regstdoffcers">Registered Officers</p>
+                    <p class="numbofofficers number-green">70</p>
+                    <p class="regstdoffcers">Registered Officers</p>
                   </a>
                 </div>
               </div>
@@ -1025,13 +1045,19 @@
       // Module  Pie Chart Controller Ends
     </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="src/index.js"></script>
+    <script src="src/index.js">
+          $(document).ready(function() {
+          $('.js-example-basic-multiple').select2();
+      });
+    </script>
+
     <script src="../bootstrap/js/jquery.min.js.js"></script>
     <!-- <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script> -->
+
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -1042,5 +1068,6 @@
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   </body>
 </html>

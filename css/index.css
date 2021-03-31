@@ -1154,6 +1154,7 @@ tr:hover {
   color: #333333;
   background-color: #fff;
   padding: 0px 13px;
+  z-index: 23;
 }
 .rdseltinpt {
   height: 50px;
@@ -2250,4 +2251,55 @@ font-weight: 700;
 .nocssattribute{
   margin-top: 0px;
   margin: 0px;
+}
+/* multicheckbox select */
+
+.multiselect {
+  width: 100%;
+  outline: none;
+  height: 50px;
+  min-height: 50px;
+}
+
+.selectBox {
+  position: relative;
+  height: 50px;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: 200;
+  border: 1px solid rgba(46, 106, 240, 0.1);
+  height: inherit;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+  background: white;
+  padding: 1rem;
+  z-index: 10000000;
+  position: relative;
+}
+#checkboxes label input {
+  margin-right: 1rem;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+#checkboxes label:hover {
+}
+#checkboxes label{
+  color: #7c828d !important;
+  font-weight: 100 !important;
 }
